@@ -1,0 +1,62 @@
+body {
+    background-color: #FFD110;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: rgba(233, 30, 99, 0);
+    color: black;
+    border: 2px solid #000;
+}
+
+.button:hover {
+    background-color: #555555;
+    color: white;
+}
+
+/*.button:hover {*/
+/*  background: #000;*/
+/*  border: 2px solid #fff;*/
+/*  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);*/
+/*  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);*/
+/*  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);*/
+/*  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);*/
+/*  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);*/
+/*  text-decoration: none;*/
+/*}*/
+
+.index_bg {
+    width: 100%;
+    height: 100%;
+    background-color: #000;   
+}
+
+.indexbox {
+    width: 600px;
+    height: 600px;
+    top: 39%;
+    left: 41%;
+    margin: -250px 0px 0px -250px;
+    position: absolute;
+}
+
+.indexbox_inner {
+    display:table-cell;
+    width:500px;
+    height:500px; 
+    text-align:center; 
+    vertical-align: middle;
+    font-size:100px;
+}
+
+.indexbox_inner .p{
+    font-size:100px;
+}

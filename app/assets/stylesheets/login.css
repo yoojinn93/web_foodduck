@@ -1,0 +1,188 @@
+html, body { 
+	width: 100%; height: 100%; 
+}
+
+.container {
+  width: 70%;
+  height: 70%;
+  margin: 40px auto;
+  background: transparent;
+}
+
+.logoduck {
+  width: 500px;
+}
+
+/*-- login-back --*/
+.login-back {
+	background: #1C1B1B;
+	display: table;
+  	width: 100%;
+  	height: 100%;
+}
+
+
+/*--login-inner--*/
+.login-inner {
+    background: #ffd110;
+    padding: 2em 1em;
+    text-align: center;
+    display: table-cell;
+  	vertical-align: middle;
+}
+.login-inner h3 {
+    color: #FFF!important;
+    font-size: 5em;
+    line-height: 1.5em;
+    margin-bottom:10px!important;
+}
+.login-inner p{
+	 font-size:15px;
+	 color:#777;
+	 line-height:1.8em;
+	 margin-bottom:10px;
+}
+
+/*login btn*/
+
+.login-btn-container .login-btn {
+  margin-top: 10px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 40px;
+  position: relative;
+  overflow: hidden;
+  width: 160px;
+  margin-right: 15px;
+  text-decoration: none;
+  padding: 0px 0px 0px 0px;
+  height: 40px;
+  border: 2px solid white;
+  display: block;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+  border-radius: 2px;
+  margin: 0 auto;
+  color: #fff;
+  transition-property: color;
+  -webkit-transition-property: color;
+  transition-duration: 0.2s;
+  webkit-transition-duration: 0.2s;
+}
+.login-btn .slider {
+  background: white;
+  width: 180px;
+  height: 45px;
+  position: absolute;
+  display: block;
+  z-index: 0;
+  transform: skew(30deg);
+  -webkit-transform: skew(30deg);
+  left: -200px;
+  -webkit-transition: transform 0.3;
+  transition: transform 0.3;
+  transition-duration: .2s;
+  -webkit-transition-duration: .5s;
+}
+.login-btn .label {
+  position: relative;
+  z-index: 1;
+  font-size: 1em;
+  font-weight: 500;
+  color: #ffd110;
+}
+
+.login-btn:hover > .label > .a {
+	color: #ffd110;
+}
+
+.login-btn:hover > .slider {
+  transform: translateX(190px);
+  -webkit-transform: translateX(190px);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  transition-duration: .4s;
+  -webkit-transition-duration: .4s;
+}
+
+.login-btn:hover {
+  color: #000
+  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+}
+
+/* 회원가입 */
+.signin {
+	margin-top:6px
+}
+
+
+
+/*-- responsive media queries --*/
+@media (max-width: 1440px){
+	
+}
+@media (max-width: 1366px){
+	
+}
+@media (max-width: 1280px){
+input[type="file"] {
+    left: 46%;
+}	
+}
+@media (max-width: 1080px){
+input[type="file"] {
+    left: 45%;
+}	
+}
+@media (max-width: 1024px){
+	
+}
+@media (max-width: 991px){
+	
+}
+@media (max-width: 800px){
+
+}
+@media (max-width: 768px){
+
+	
+}
+@media (max-width: 736px){
+	
+
+}
+@media (max-width: 667px){
+}
+@media (max-width: 640px){
+}
+@media (max-width: 600px){
+	.login-back h3 {
+	    font-size: 3em;
+	}
+	
+}
+@media (max-width: 568px){
+}
+@media (max-width: 480px){
+	.login-back h3 {
+	    font-size: 3em;
+		
+	}
+}
+@media (max-width: 414px){
+}
+@media (max-width: 384px){
+}
+@media (max-width:375px){
+
+}
+@media (max-width: 360px){
+	.login-inner p{
+		font-size: 14px;
+	}
+}
+
+
