@@ -1,14 +1,14 @@
 Rails.application.routes.draw do
   devise_for :users
-  #get 'index' => 'home#index'
-  #get 'main' => 'home#main'
+  # get 'index' => 'home#index'
+  # get 'main' => 'home#main'
   # get 'single' => 'home#single'
   #get 'result' => 'home#result'
   
   #get 'login' => 'home#login'
   get ':controller(/:action(/:id))'
   post ':controller(/:action(/:id))'
-  root 'home#login'
+  root 'home#phone'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

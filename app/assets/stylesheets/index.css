@@ -1,5 +1,8 @@
+/*main index페이지입니다 */
+
 html, body { 
 	width: 100%; height: 100%; 
+	background-color: #fdd020;
 }
 
 .container {
@@ -9,8 +12,9 @@ html, body {
   background: transparent;
 }
 
+/* logo */
 .logoduck {
-  width: 500px;
+  width: 200px;
 }
 
 /*-- login-back --*/
@@ -19,18 +23,21 @@ html, body {
 	display: table;
   	width: 100%;
   	height: 100%;
+  	margin-left: -26px;
+    margin-top: -20px;
 }
 
 
 /*--login-inner--*/
 .login-inner {
-    background: #ffd110;
+    background: #fdd020;
     padding: 2em 1em;
     text-align: center;
     display: table-cell;
   	vertical-align: middle;
 }
 .login-inner h3 {
+    font-family: 'Montserrat';
     color: #FFF!important;
     font-size: 5em;
     line-height: 1.5em;
@@ -86,15 +93,16 @@ html, body {
   transition-duration: .2s;
   -webkit-transition-duration: .5s;
 }
-.login-btn .label {
+
+.login-btn .label a {
   position: relative;
   z-index: 1;
-  font-size: 1em;
-  font-weight: 500;
-  color: #ffd110;
+  font-size: 1.4em;
+  font-weight: 300;
+  color: #fff;
 }
 
-.login-btn:hover > .label > .a {
+.login-btn:hover > .label a {
 	color: #ffd110;
 }
 

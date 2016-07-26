@@ -17,3 +17,21 @@ jQuery(document).ready(function(){
 		});
 	}
 });
+
+
+/*메인-기사 이동*/
+function DoNav(url)
+{
+  document.location.href = url;
+}
+
+// /*iframe이동*/
+
+// function changeIframeUrl(url)
+// {
+//     document.getElementById("").src = url;
+// }
+
+// function open_in_frame(url) {
+// 	$('.frame-border').attr('src', url);
+// }
