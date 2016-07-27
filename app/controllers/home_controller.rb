@@ -6,7 +6,4 @@ class HomeController < ApplicationController
        redirect_to "/home/main" 
      end
   end
-  # def phone
-  #     if 
-  # end
 end

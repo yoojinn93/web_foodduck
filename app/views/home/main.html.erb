@@ -1,26 +1,33 @@
-<body>
+
 <div class="body-back">
 	<div class="masthead pdng-stn1">
 		
 		<!--사이드바-->
-		<div id="menu" class="panel" role="navigation">
+		<div id="menu" class="sidenav" role="navigation">
 			<div class="wrap-content">
 				<div class="nav-menu text-center">
-					<img class="img-circle border-effect" src="/assets/pic3.png" alt=" ">
-						<h3>John Leo</h3>
-						<p>Admin</p>
-						<div class="pro-menu">
-							<div class="logo">
-								<li><a class=" link link--yaku scroll active" href="#home"><span>H</span><span>o</span><span>m</span><span>e</span></a></li>
-								<li><a class=" link link--yaku scroll" href="#about"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span></a></li>
-								<li><a class=" link link--yaku scroll" href="#service"><span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span></a></li>
-								<li><a class=" link link--yaku scroll" href="#recipes"><span>O</span><span>u</span><span>r</span> <span>R</span><span>e</span><span>c</span><span>i</span><span>p</span><span>e</span><span>s</span></a></li>
-								<li><a class=" link link--yaku scroll" href="#gallery"><span>G</span><span>a</span><span>l</span><span>l</span><span>e</span><span>r</span><span>y</span></a></li>
-								<li><a class=" link link--yaku scroll" href="#contact"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></a></li>
-							</div>
-				
+					<img class="nav-profile img-circle border-effect" src="/assets/ilguk.png" alt=" ">
+						<img class="side-go nav-camera" src="/assets/camera.gif" alt=" ">
+						<p class="nav-nickname">삼둥파파</p>
+						<button class="nav-proedit-btn">프로필 편집</button>
+					<div class="side-go" onclick="DoNav('/home/myfood')">
+						<img class="side-nemo" src="/assets/my_food.png" alt=" ">
+							<p class="side-nemo-label">마이푸드</p>
+					</div>	
+					<div class="side-go" onclick="DoNav('/home/checklist')">
+						<img class="side-nemo" src="/assets/checklist.gif" alt=" ">
+							<p class="side-nemo-label">체크리스트</p>
+					</div>
+					<div class="side-go" onclick="DoNav('/home/checklist')">
+						<img class="side-nemo" src="/assets/qna.png" alt=" ">
+							<p class="side-nemo-label">Q&A</p>
+					</div>
+					<div class="side-go" onclick="DoNav('/home/checklist')">
+						<img class="side-nemo" src="/assets/setting.png" alt=" ">
+							<p class="side-nemo-label">설정</p>
+					</div>
 
-						</div>
+				</div>
 				</div>
 			</div>
 		</div>
@@ -37,7 +44,7 @@
 					<h5 class="pro-link">FOODDUCK</h5>
 				</div>
 				<div class="nav-right">
-				    <a href="/home/result"><img src="/assets/my-page.gif" class="nav-img"/></a>
+				    <a href="/home/index"><img src="/assets/go-home.gif" class="nav-img"/></a>
 					<div id="dd1" class="wrapper-dropdown-1" tabindex="1"><i class="fa fa-user"></i>
 						<ul class="dropdown">
 							<li><a href="#">Edit nav </a></li>
@@ -88,7 +95,7 @@
 						</div>
 						<div class="search_rec">
 								<p>
-									<a href="http://m.naver.com" class="search_rec_k">#아기과자</a>
+									<a href="http://m.naver.com" class="search_rec_k"> #아기과자 </a>
 									<a href="http://m.naver.com" class="search_rec_k">#과자</a>
 									<a href="http://m.naver.com" class="search_rec_k">#GMO</a>
 									<a href="http://m.naver.com" class="search_rec_k">#감자칩</a>
@@ -150,7 +157,12 @@
                             </article>	
                         </div>
 				
-        			    
+        			    <div class="food_article_label">
+        		         	<p>최신 식품 뉴스
+        		         	<button class="food_article_label_btn">더 보기</button>
+        		         	</p>
+        		      </div>
+        		         
         			    <div class="food_article">
         			        <table border="0" width="400" class="food_article_table">
                             <tr onclick="DoNav('http://m.news.naver.com/read.nhn?mode=LSD&mid=sec&sid1=102&oid=020&aid=0002990803')">
@@ -177,7 +189,7 @@
         		         	</p>
         		         </div>
         		         <div class="food_dic">
-        			     		<table border="0" width="400" class="food_article_table">
+        			     		<table border="0" width="400" class="food_dic_table">
                             <tr onclick="DoNav('http://m.news.naver.com/read.nhn?mode=LSD&mid=sec&sid1=102&oid=020&aid=0002990803')">
                             <td class="food_dic_line indent">구연산 (Citric acid)</td>
                             </tr>
@@ -195,6 +207,10 @@
                             </tr>
                       </table>
         		        </div>
+        		        
+        		        <div class="foot">
+        		        	
+        		        </div>
 				</div>	    
 			    
 			</div>
@@ -204,7 +220,6 @@
   </div>
 </div>
 </div>
+
 <script src="/assets/jquery.nicescroll.js"></script>
 <script src="/assets/scripts.js"></script>
-</body>
-</html>

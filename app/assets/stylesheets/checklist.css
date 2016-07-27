@@ -1,0 +1,118 @@
+
+.food_check_label {
+    margin-top: 25px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #616564;
+    font-size: 1.4em;
+    font-weight: 200;
+    position: relative;
+    left: 3px;
+    margin-bottom: -3px;
+    
+}
+table.food_check_table {
+    width: 100%;
+    height: 100%;
+    cursor:pointer;
+    font-weight: 200;
+}
+.food_check_label_btn {
+    background-color: #FDD020;
+    border: none;
+    color: white;
+    padding: 4px 17px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 200;
+    position: relative;
+    left: 143px;
+    bottom: 2px;
+}
+.food_check {
+    background: none;
+    border-collapse: collapse;
+    width: 80%;
+    height: 220px;
+    margin: 0 auto;
+	/*text-align: center;
+	margin-top: 25px;*/
+	font-family: 'Noto Sans Korean', 'Open Sans', sans-serif;
+	font-weight: 200;
+    color: #616564;
+    font-size: 1.05em;
+    padding-top: 65px;
+}
+
+table.food_check_table {
+    width: 100%;
+    height: 100%;
+    cursor:pointer;
+
+}
+
+.food_check_line {
+    line-height: 4px;
+	border-bottom:2px solid #ffd110;
+}
+.adder {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background-color: transparent;
+    border: none;
+}
+.check_title_box {
+    text-align:center;
+}
+.check_title_box h5 {
+    font-family: 'Noto Sans Korean', 'Open Sans', sans-serif;
+	font-weight: 200;
+    color: #616564;
+    font-size: 1.4em;
+}
+
+.edit_title {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 72px;
+    top: 140px;
+    background-color: transparent;
+    border: none;
+}
+.edit_title_img {
+    width: 100%;
+}
+
+.add_check {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 133px;
+    top: 411px;
+    background-color: transparent;
+    border: none;
+}
+
+.add_check_img {
+    width: 100%;
+}
+.edit_additive {
+    width: 40px;
+    position: absolute;
+    right: 56px;
+    top: 2px;
+    background-color: transparent;
+    border: none;
+}
+.edit_additive_img {
+    width: 100%;
+}

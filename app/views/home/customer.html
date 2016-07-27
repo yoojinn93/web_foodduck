@@ -1,0 +1,190 @@
+<head>
+	<link rel="stylesheet" type="text/css" href="assets/myfood.css">
+</head>
+
+<body>
+	<!--사이드바-->
+		<div id="menu" class="sidenav" role="navigation">
+			<div class="wrap-content">
+				<div class="nav-menu text-center">
+					<img class="nav-profile img-circle border-effect" src="/assets/ilguk.png" alt=" ">
+						<img class="side-go nav-camera" src="/assets/camera.gif" alt=" ">
+						<p class="nav-nickname">삼둥파파</p>
+						<button class="nav-proedit-btn">프로필 편집</button>
+					<div class="side-go" onclick="DoNav('/home/myfood')">
+						<img class="side-nemo" src="/assets/my_food.png" alt=" ">
+							<p class="side-nemo-label">마이푸드</p>
+					</div>	
+					<div class="side-go" onclick="DoNav('/home/checklist')">
+						<img class="side-nemo" src="/assets/checklist.gif" alt=" ">
+							<p class="side-nemo-label">체크리스트</p>
+					</div>
+					<div class="side-go" onclick="DoNav('/home/checklist')">
+						<img class="side-nemo" src="/assets/qna.png" alt=" ">
+							<p class="side-nemo-label">Q&A</p>
+					</div>
+					<div class="side-go" onclick="DoNav('/home/checklist')">
+						<img class="side-nemo" src="/assets/setting.png" alt=" ">
+							<p class="side-nemo-label">설정</p>
+					</div>
+
+				</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="phone-box wrap push">
+		    
+		    <!-- nav -->
+			<div class="navtop">
+				<div class="nav-left">
+					<a href="#menu" class="menu-link"><img src="/assets/left-top.gif" class="nav-img"/></a>
+				</div>
+				<div class="nav-myfood-name">
+					<h5 class="pro-link">MYFOOD</h5>
+				</div>
+				<!--<div class="nav-myfood-name">-->
+				<!--	<h5 class="myfood-link"> MY FOOD </h5>-->
+				<!--</div>-->
+				<div class="nav-right">
+				    <a href="/home/index"><img src="/assets/go-home.gif" class="nav-img"/></a>
+				
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			
+						<!-- TAB JS -->
+						<!-- assets/easyResponsiveTabs2.js -->
+						<script src="/assets/easyResponsiveTabs2.js" type="text/javascript"></script>
+						<script type="text/javascript">
+							$(document).ready(function () {
+								$('#horizontalTab').easyResponsiveTabs({
+									type: 'default', //Types: default, vertical, accordion           
+									width: 'auto', //auto or any width like 600px
+									fit: true   // 100% fit in a container
+								});
+							});
+						</script>
+						<!-- TAB JS -->
+						
+						<div class="small_menu">
+								<div id="horizontalTab" style="display: block; width: 101%; margin: -2px;">
+									  <ul class="small_menu_list">
+										  <li class="small_menu_item small_menu_active" aria-controls="smenu_item_0" role="tab"><span> 관심상품 </span></li>
+										  <li class="small_menu_item" aria-controls="smenu_item_1" role="tab"><span> 주의상품 </span></li>
+										  <li class="small_menu_item" aria-controls="smenu_item_2" role="tab"><span> 나의리뷰 </span></li>
+										  <div class="clearfix"></div>
+									  </ul>	
+									  
+									<div class="small_menu_container">
+										
+										<!-- 공지사항 -->
+										<h2 class="small_menu_accordion small_menu_active" role="tab" aria-controls="smenu_item_0"><span class="small_menu_arrow"></span>Statistics</h2>
+										<div class="menu_tab_1 small_menu_content small_menu_content_active" aria-labelledby="smenu_item_0" style="display:block">
+											<div class="menu_img">
+												<div class="menu_each_product">
+														<div class="each_product">
+														    <h5> FOODDUCK 5.7.1 버전 업데이트 </h5>
+								                            <h6> 16/07/25 </h6>
+															<div class="clearfix"> </div>
+														</div>
+														<div class="each_product">
+															<h5> FOODDUCK 5.7.1 버전 업데이트 </h5>
+								                            <h6> 16/07/25 </h6>
+															<div class="clearfix"> </div>
+														</div>
+														
+														<div class="each_product">
+															<h5> FOODDUCK 5.7.1 버전 업데이트 </h5>
+								                            <h6> 16/07/25 </h6>
+															<div class="clearfix"> </div>
+														</div>
+														
+														<div class="each_product">
+															<h5> FOODDUCK 5.7.1 버전 업데이트 </h5>
+								                            <h6> 16/07/25 </h6>
+															<div class="clearfix"> </div>
+														</div>
+												</div>
+											</div>
+										</div>
+										<!-- 공지사항 끝-->
+										
+										<!-- 이용가이드 -->
+										<h2 class="small_menu_accordion small_menu_active" role="tab" aria-controls="smenu_item_1"><span class="small_menu_arrow"></span>Statistics</h2>
+										<div class="menu_tab_2 small_menu_content small_menu_content_active" aria-labelledby="smenu_item_1" style="display:block">
+											<div class="menu_img">
+												<div class="menu_each_product">
+														<div class="each_product">
+														    <h5> FOODDUCK 5.7.1 버전 업데이트 </h5>
+								                            <h6> 16/07/25 </h6>
+															<div class="clearfix"> </div>
+														</div>
+														<div class="each_product">
+															<h5> FOODDUCK 5.7.1 버전 업데이트 </h5>
+								                            <h6> 16/07/25 </h6>
+															<div class="clearfix"> </div>
+														</div>
+														
+														<div class="each_product">
+															<h5> FOODDUCK 5.7.1 버전 업데이트 </h5>
+								                            <h6> 16/07/25 </h6>
+															<div class="clearfix"> </div>
+														</div>
+														
+														<div class="each_product">
+															<h5> FOODDUCK 5.7.1 버전 업데이트 </h5>
+								                            <h6> 16/07/25 </h6>
+															<div class="clearfix"> </div>
+														</div>
+												</div>
+											</div>
+										</div>
+										<!-- 이용가이드 끝 -->
+										
+										<!-- FAQ -->
+									    <h2 class="small_menu_accordion small_menu_active" role="tab" aria-controls="smenu_item_2"><span class="small_menu_arrow"></span>Statistics</h2>
+										<div class="menu_tab_1 small_menu_content small_menu_content_active" aria-labelledby="smenu_item_2" style="display:block">
+											<div class="menu_img">
+												<div class="menu_each_product">
+														<div class="each_product">
+														    <h5> FOODDUCK 5.7.1 버전 업데이트 </h5>
+								                            <h6> 16/07/25 </h6>
+															<div class="clearfix"> </div>
+														</div>
+														<div class="each_product">
+															<h5> FOODDUCK 5.7.1 버전 업데이트 </h5>
+								                            <h6> 16/07/25 </h6>
+															<div class="clearfix"> </div>
+														</div>
+														
+														<div class="each_product">
+															<h5> FOODDUCK 5.7.1 버전 업데이트 </h5>
+								                            <h6> 16/07/25 </h6>
+															<div class="clearfix"> </div>
+														</div>
+														
+														<div class="each_product">
+															<h5> FOODDUCK 5.7.1 버전 업데이트 </h5>
+								                            <h6> 16/07/25 </h6>
+															<div class="clearfix"> </div>
+														</div>
+												</div>
+											</div>
+										</div>
+										<!-- FAQ 끝 -->
+										
+										</div>
+									</div>
+								</div>
+						</div>
+				</div>
+			</div>
+  </div>
+</div>
+</div>
+<script src="/assets/jquery.nicescroll.js"></script>
+<script src="/assets/scripts.js"></script>
+</body>
+</html>

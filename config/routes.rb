@@ -9,6 +9,10 @@ Rails.application.routes.draw do
   get ':controller(/:action(/:id))'
   post ':controller(/:action(/:id))'
   root 'home#phone'
+  
+  get 'myfood' => 'home#myfood'
+  get 'customer' => 'home#customer'
+  get 'screen' => 'home#screen'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

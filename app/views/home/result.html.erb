@@ -1,1 +1,137 @@
-<h4>result</h4>
+
+<body>
+<div class="body-back">
+	<div class="masthead pdng-stn1">
+		<div id="menu" class="panel" role="navigation">
+			<div class="wrap-content">
+				<div class="profile-menu text-center">
+					<img class="img-circle border-effect" src="/assets/pic3.png" alt=" ">
+						<h3>John Leo</h3>
+						<p>Admin</p>
+						<div class="pro-menu">
+							<div class="logo">
+								<li><a class=" link link--yaku scroll active" href="#home"><span>H</span><span>o</span><span>m</span><span>e</span></a></li>
+								<li><a class=" link link--yaku scroll" href="#about"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span></a></li>
+								<li><a class=" link link--yaku scroll" href="#service"><span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span></a></li>
+								<li><a class=" link link--yaku scroll" href="#recipes"><span>O</span><span>u</span><span>r</span> <span>R</span><span>e</span><span>c</span><span>i</span><span>p</span><span>e</span><span>s</span></a></li>
+								<li><a class=" link link--yaku scroll" href="#gallery"><span>G</span><span>a</span><span>l</span><span>l</span><span>e</span><span>r</span><span>y</span></a></li>
+								<li><a class=" link link--yaku scroll" href="#contact"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></a></li>
+							</div>
+				
+
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="phone-box wrap push" id="home">
+			<div class="menu-notifyy">
+				<div class="profile-left">
+					<a href="#menu" class="menu-link"><i class="fa fa-list-ul"></i></a>
+				</div>
+				<div class="Profile-mid">
+					<h5 class="pro-link">검색결과</h5>
+				</div>
+				<div class="Profile-right">
+					<div id="dd1" class="wrapper-dropdown-1" tabindex="1"><i class="fa fa-user"></i>
+						<ul class="dropdown">
+							<li><a href="#">Edit Profile </a></li>
+							<li><a href="#">Help</a></li>
+							<li><a href="#">Activity log</a></li>
+							<li><a href="#">Log Out</a></li>
+						</ul>
+							<script type="text/javascript">
+														function DropDown(el) {
+															this.dd = el;
+															this.initEvents();
+														}
+														DropDown.prototype = {
+															initEvents : function() {
+																var obj = this;
+											
+																obj.dd.on('click', function(event){
+																	$(this).toggleClass('active');
+																	event.stopPropagation();
+																});	
+															}
+														}
+														$(function() {
+											
+															var dd = new DropDown( $('#dd1') );
+											
+															$(document).click(function() {
+																// all dropdowns
+																$('.wrapper-dropdown-1').removeClass('active');
+															});
+											
+														});
+							</script>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div> 
+			<div class="result1">
+				<div class="result2">
+						<div class="banner_search">
+								<form>
+									<input type="search" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}" required="">
+									<input type="submit" value=" ">
+								</form>
+						</div> 
+
+				
+				</div>
+			</div>
+		<div class="detail">
+					<div class="detail" id="about">
+						<div class='kkk'>
+							<div class='kkkk'>
+								<div class="info" style="height:27px">
+									<h3>제품성분 정보</h3>
+								</div>
+								<div class='kkkkk'style="height:31px">
+									<button class="chanjun">자세히보기</button>
+								</div>
+							</div>
+						</div>
+						<ul>
+							<li class='contents'>가공땅콩(중국산/땅콩,밀가루,물엿)</li>
+							<li class='contents'>찰옥수수전분(이탈리아산73%, 수입산27%)</li>
+							<li class='contents'>밀가루</li>
+							<li class='contents'>백설탕</li>
+							<li class='contents'>혼합식용유(해바라기유50%, 팜올레인유50%)</li>
+						</ul>
+					</div>
+		</div>
+		
+		<div class="detail">
+					<div class="detail" id="about">
+						<div class='kkk'>
+							<div class='kkkk'>
+								<div class="info" style="height:27px">
+									<h3>제조사 정보</h3>
+								</div>
+								<div class='kkkkk'style="height:31px">
+									<button class="chanjun">자세히보기</button>
+								</div>
+							</div>
+						</div>
+						<div class='information'>Image</div>
+						<div class='information'>Contents</div>
+					</div>
+		</div>
+		
+		<div class="detail">
+					<div class="detail" id="about">
+						<div class='kkk'>
+							<div class='kkkk'>
+								<div class="info">
+									<h3>제품리뷰</h3>
+								</div>
+								<div class='kkkkk'>
+									<button class="chanjun">자세히보기</button>
+								</div>
+							</div>
+						</div>
+						<p>Lorem ipsum Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit.</p>
+					</div>
+		</div>

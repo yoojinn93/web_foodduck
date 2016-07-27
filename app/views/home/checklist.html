@@ -1,0 +1,96 @@
+		<div class="phone-box wrap push">
+		    
+		    <!-- nav -->
+			<div class="navtop">
+				<div class="nav-left">
+					<a href="#menu" class="menu-link"><img src="/assets/left-top.gif" class="nav-img"/></a>
+				</div>
+				<div class="nav-name">
+					<h5 class="pro-link">CHECKLIST</h5>
+				</div>
+				<div class="nav-right">
+				    <a href="/home/result"><img src="/assets/my-page.gif" class="nav-img"/></a>
+				</div>
+				<div class="clearfix"></div>
+			</div> 
+	        <div style="min-height: 500px;
+		         background-color: white;"
+			     >
+        		        <div class="food_check">
+        			    	<table border="0" width="400" class="food_check_table">
+	                            <tr onclick="DoNav('/home/checklist1')">
+	                            <td class="food_check_line indent">우리 딸램</td>
+	                            </tr>
+	                            <tr onclick="DoNav('/home/checklist2')">
+	                            <td class="food_check_line indent">남편 당뇨</td>
+	                            </tr>
+	                            <tr onclick="DoNav('/home/checklist3')">
+	                            <td class="food_check_line indent">아버지 알러지</td>
+	                            </tr>
+	                            <tr>
+	                            <td class="food_check_line indent"></td>
+	                            </tr>
+	                            <tr>
+	                            <td class="indent"></td>
+	                            </tr>
+                      		</table>
+        		        </div>
+        		<button id="myBtn" class="adder"><img class="adder" src="/assets/addcheck.png"></button>
+	        </div>
+		</div>	
+		
+    <!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		    <div class="modal-dialog" style="margin-top: 50%;">
+		        <div class="modal-content">
+		            <div class="modal-header" class="checkmodal" style="background-color: #fdd020; border-bottom: 1px solid #fdd020;">
+		                <h4 class="modal-title" id="myModalLabel" 
+		                style="text-align: center;
+							    font-family: 'Noto Sans Korean', 'Open Sans', sans-serif;
+							    font-weight: 200;
+							    color: #fff;
+							    font-size: 20px;"
+					    >체크리스트 추가</h4>
+		            </div>
+		            <div class="modal-body" class="checkmodal" style="background-color: #fdd020;">
+		                <input type="text" class="form-control" placeholder="아버지 알러지 라고 입력하세요">
+		            </div>
+		            <div class="modal-footer" class="checkmodal" style="background-color: #fdd020; border-top: 1px solid #fdd020;">
+		                
+		                <button type="button" class="btn btn-default" data-dismiss="modal"
+		                	style="background-color: white;
+		                	margin-left: 10px;
+						    text-align: center;
+						    font-family: 'Noto Sans Korean', 'Open Sans', sans-serif;
+						    font-weight: 200;
+						    color: #fdd020;
+						    font-size: 20px;
+						    border: none"
+						    >취소</button>
+						    
+		                <a href="/home/checklist3"><button type="button" class="btn btn-primary"
+		                	style="background-color: white;
+						    text-align: center;
+						    font-family: 'Noto Sans Korean', 'Open Sans', sans-serif;
+						    font-weight: 200;
+						    color: #fdd020;
+						    font-size: 20px;
+					        border: none;"
+						    >추가하기</button></a>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+
+<script>
+// when DOM is ready
+$(document).ready(function () {
+
+     // Attach Button click event listener 
+    $("#myBtn").click(function(){
+
+         // show Modal
+         $('#myModal').modal('show');
+    });
+});
+</script>
