@@ -1012,8 +1012,8 @@ td.indent {
 }
 
 /* 성분백과 메인 */
-.grid {
-  border: 1px solid #333;
+.grid 
+{
 }
 
 /* clear fix */
@@ -1089,7 +1089,7 @@ td.indent {
     border: none;
     color: white;
     padding: 4px 4px;
-    margin: 13px 0px 0px 14px;
+    margin: 13px 0px 0px 12px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -1104,29 +1104,22 @@ td.indent {
 
 #food_han
 {
+    background: none;
+    border-radius: 13px;
+	 -webkit-border-radius: 13px;
+	  -moz-border-radius: 13px;
+	   -o-border-radius: 13px;
+    border: 2px solid #fdd020;
+    width: 80%;
+    margin: 0 auto;
+	font-family: 'Noto Sans Korean', 'Open Sans', sans-serif;
+    color: #616564;
+    font-size: 1.05em;
     margin-top: 20px;
     margin-bottom: 10px;
-    height: 103px;
+    height: 180px;
 }
 
-.food_add_han
-{
-    background-color: #FDD020;
-    border: none;
-    color: white;
-    padding: 4px 4px;
-    margin: 13px 0px 0px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
-    cursor: pointer;
-    border-radius: 8px;
-    font-weight: 200;
-    /*position: relative;*/
-    left: 100px;
-    bottom: 2px;
-}
 
 /* 성분백과 상세 (KSK) */
 .nav_dic

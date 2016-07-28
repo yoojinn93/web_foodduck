@@ -43,19 +43,18 @@
 			</div> 
 			
 			<!--리얼 바디-->
-	        <div style="min-height: 500px; min-width:375px;
+	        <div style="min-height: 532px; min-width:375px;
 		         background-image:url(/assets/each_checklist.PNG);
 		         background-repeat:no-repeat;
 		         background-position: 13px 10px;
 		         background-color: white;"
 			     >
-	                    <div class="food_check" >
+	                    <div class="food_check" style="padding-top: 41px;">
 	                        <div class="check_title_box">
 	                        	
 	                            <h5><%=@checklists_selected.title %></h5>
-	                            <button id="제목수정버튼" class="edit_title"><img class="edit_title_img" src="/assets/addcheck.png"></button>
 	                            <form action="/home/delete_list/<%=@checklists_selected.id%>" method="post">
-	                            	<button type="submit" class="edit_title" style="right: 30px; top: 136px"><img class="edit_title_img" src="/assets/trashcan.png"></button>
+	                            	<button type="submit" class="edit_title" style="right: 28px; top: 110px"><img class="edit_title_img" src="/assets/trashcan.png"></button>
 	                        	</form>
 	                        </div>
         			    	<table border="0" width="100%"class="food_check_table">
@@ -71,7 +70,7 @@
 	                            <% end %>
                       		</table>
         		        </div>
-        		        <button id="myBtn" class="add_check"><img class="add_check_img" src="/assets/addcheck.png"></button>
+        		        <button id="myBtn" class="add_check22"><img class="add_check_img" src="/assets/addcheck.png"></button>
         		      
 	        </div>
 		</div>	

@@ -7,34 +7,28 @@
 			<div class="wrap-content">
 				<div class="nav-menu text-center">
 					<img class="nav-profile img-circle border-effect" src="/assets/ilguk.png" alt=" ">
-						<img class="side-go nav-camera" onclick="DoNav('/home/myprofile')" src="/assets/camera.gif" alt=" ">
+					<img class="side-go nav-camera" onclick="DoNav('/home/myprofile')" src="/assets/camera.gif" alt=" ">
 						<p class="nav-nickname">삼둥파파</p>
 						<button class="nav-proedit-btn" onclick="DoNav('/home/myprofile')">프로필 편집</button>
-					<div>
+					
+					<div class="side-go" onclick="DoNav('/home/myfood')">
+						<img class="side-nemo" src="/assets/my_food.png" alt=" ">
+							<p class="side-nemo-label">마이푸드</p>
+					</div>	
+					<div class="side-go" onclick="DoNav('/home/checklist')">
 						<img class="side-nemo" src="/assets/checklist.gif" alt=" ">
 							<p class="side-nemo-label">체크리스트</p>
 					</div>
-					<div>
+					<div class="side-go" onclick="DoNav('/home/qna')">
 						<img class="side-nemo" src="/assets/qna.png" alt=" ">
 							<p class="side-nemo-label">Q&A</p>
 					</div>
-					<div>
+					<div class="side-go" onclick="DoNav('/home/setting')">
 						<img class="side-nemo" src="/assets/setting.png" alt=" ">
 							<p class="side-nemo-label">설정</p>
 					</div>
-					
-						<div class="pro-menu">
-							<div class="logo">
-								<li><a class=" link link--yaku scroll active" href="#home"><span>H</span><span>o</span><span>m</span><span>e</span></a></li>
-								<li><a class=" link link--yaku scroll" href="#about"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span></a></li>
-								<li><a class=" link link--yaku scroll" href="#service"><span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span></a></li>
-								<li><a class=" link link--yaku scroll" href="#recipes"><span>O</span><span>u</span><span>r</span> <span>R</span><span>e</span><span>c</span><span>i</span><span>p</span><span>e</span><span>s</span></a></li>
-								<li><a class=" link link--yaku scroll" href="#gallery"><span>G</span><span>a</span><span>l</span><span>l</span><span>e</span><span>r</span><span>y</span></a></li>
-								<li><a class=" link link--yaku scroll" href="#contact"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></a></li>
-							</div>
-				
 
-						</div>
+				</div>
 				</div>
 			</div>
 		</div>
@@ -48,7 +42,7 @@
 					<a href="#menu" class="menu-link"><img src="/assets/left-top.gif" class="nav-img"/></a>
 				</div>
 				<div class="nav-name">
-					<h5 class="pro-link">FOODDUCK</h5>
+					<a href="/home/product_detail" style="text-decoration: none"><h5 class="pro-link uuuset"> SEARCH </h5></a>
 				</div>
 				<div class="nav-right">
 				    <a href="/home/index"><img src="/assets/go-home.gif" class="nav-img"/></a>
@@ -88,7 +82,7 @@
     																<p>
     																    <span class="bbold">제품명 :</span> 오징어땅콩 </br>
     																    <span class="bbold">제조사 :</span> 오리온 제과 </br>
-    																    <span class="bbold">나의 평점 :</span> 
+    																    <span class="bbold">전체 평점 :</span> 
     																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
     																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
     																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
@@ -113,7 +107,7 @@
     																<p>
     																    <span class="bbold">제품명 :</span> 쿠크다스 화이트 </br>
     																    <span class="bbold">제조사 :</span> 크라운 제과 </br>
-    																    <span class="bbold">나의 평점 :</span> 
+    																    <span class="bbold">전체 평점 :</span> 
     																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
     																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
     																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
@@ -121,7 +115,7 @@
     																    <img src="/assets/star_non" width="15" height="15" class="star_review">
     																    </br>
     																 	<center>
-    																 		<a href="/home/main"><button class="food_detail_btn">자세히 보기</button></a>
+    																 		<a href="/home/result"><button class="food_detail_btn">자세히 보기</button></a>
     																 	</center>
     																</p>
     															</div>
@@ -138,7 +132,7 @@
     																<p>
     																    <span class="bbold">제품명 :</span> 포카칩 오리지널 </br>
     																    <span class="bbold">제조사 :</span> 오리온 제과 </br>
-    																    <span class="bbold">나의 평점 :</span> 
+    																    <span class="bbold">전체 평점 :</span> 
     																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
     																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
     																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
@@ -146,7 +140,7 @@
     																    <img src="/assets/star_non" width="15" height="15" class="star_review">
     																    </br>
     																 	<center>
-    																 		<a href="/home/main"><button class="food_detail_btn">자세히 보기</button></a>
+    																 		<a href="/home/result"><button class="food_detail_btn">자세히 보기</button></a>
     																 	</center>
     																</p>
 																</div>
@@ -163,7 +157,7 @@
 																<p>
     																    <span class="bbold">제품명 :</span> 도도한 나쵸 오리지널 </br>
     																    <span class="bbold">제조사 :</span> 오리온 제과 </br>
-    																    <span class="bbold">나의 평점 :</span> 
+    																    <span class="bbold">전체 평점 :</span> 
     																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
     																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
     																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
@@ -171,7 +165,7 @@
     																    <img src="/assets/star_non" width="15" height="15" class="star_review">
     																    </br>
     																 	<center>
-    																 		<a href="/home/main"><button class="food_detail_btn">자세히 보기</button></a>
+    																 		<a href="/home/result"><button class="food_detail_btn">자세히 보기</button></a>
     																 	</center>
     																</p>
 																</div>

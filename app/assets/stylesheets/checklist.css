@@ -79,8 +79,8 @@ table.food_check_table {
     width: 100px;
      height: 100px; 
     position: relative;
-    left: 239px;
-    top: 168px;
+        left: 247px;
+    top: 188px;
     background-color: transparent;
     border: none;
 }
@@ -100,7 +100,7 @@ img.adder2 {
 }
 .check_title_box h5 {
     font-family: 'Noto Sans Korean', 'Open Sans', sans-serif;
-	font-weight: 200;
+	font-weight: 100;
     color: #616564;
     font-size: 1.4em;
     margin-top: 3px;
@@ -142,4 +142,26 @@ img.adder2 {
 }
 .edit_additive_img {
     width: 100%;
+}
+
+
+
+
+/*modal*/
+.modal-dialog{
+    font-family: 'Noto Sans Korean', 'Open Sans', sans-serif;
+    color: black;
+    font-size: 1.05em;
+}
+
+
+
+.add_check22{
+        width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 133px;
+    top: 467px;
+    background-color: transparent;
+    border: none;
 }

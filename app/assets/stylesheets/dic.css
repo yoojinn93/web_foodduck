@@ -1,0 +1,42 @@
+.btn_al {
+    background-color: rgba(97, 101, 100, 0.12);
+    border: 2px solid rgba(97, 101, 100, 0);
+    color: #ffffff;
+    width: 34px;
+    margin: 5px 0px 0px 4px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 100;
+    /* position: relative; */
+    left: 100px;
+    bottom: 2px;
+}
+
+button.btn_al.button.is-checked {
+    background-color: #fdd020;
+    color: #fff;
+    border: 2px solid #fdd020;
+}
+
+.dicfoot {
+    position: relative;
+    height: 300px;
+    background: white;
+}
+
+
+.hohoho {
+    border: none !important;
+    margin-left: 20px;
+    width: 94%;
+    height: 50%;
+}
+
+.elename{
+    color: white;
+    font-size: 14.7px !important;
+    font-weight: 200 !important;
+}

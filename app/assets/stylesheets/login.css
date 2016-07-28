@@ -1,0 +1,164 @@
+/*로그인*/
+.oriori{
+    margin-bottom: 25px;
+}
+
+.qqq{
+        margin-top: -48px;
+}
+
+.in_mailbox{
+    background-color: white;
+    border-radius: 8px;
+    width: 125%;
+    height: 34px;
+    position: relative;
+    left: -21px;
+    margin-bottom: 6px;
+    font-family: 'Noto Sans Korean', 'Open Sans', sans-serif;
+}
+
+.login_btnn{
+    background-color: #fdd020;
+    border: 2px solid white;
+    border-radius: 8px;
+    width: 125%;
+    height: 34px;
+    position: relative;
+    left: -21px;
+    margin-bottom: 6px;
+    font-family: 'Noto Sans Korean', 'Open Sans', sans-serif;
+}
+
+.login_btnn:hover{
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    width: 125%;
+    height: 34px;
+    position: relative;
+    left: -21px;
+    margin-bottom: 6px;
+}
+
+.ttt{
+    font-size: 18px !important;
+    margin-top: -12px !important;
+    color: white;
+    font-weight: 300 !important;
+    line-height: 1 !important;
+    margin-bottom: 0px !important;
+    font-family: 'Noto Sans Korean', 'Open Sans', sans-serif;
+}
+
+.ttt:hover{
+    color:#fdd020;
+}
+
+input#user_email, input#user_password {
+    font-weight: 300;
+    height: 99%;
+    font-size: 16px;
+    border-bottom: none;
+    font-family: 'Noto Sans Korean', 'Open Sans', sans-serif;
+}
+
+
+.what{
+        color: white;
+    font-size: 16px;
+     text-align: center; 
+    font-weight: 200;
+    line-height: 1.4;
+    margin-top: -16px;
+    
+}
+
+.what a{
+    color: white;
+}
+
+.what a:hover{
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+
+
+/*회원가입*/
+.chichi{
+    margin-top: -29px;
+}
+
+.gomgom{
+    font-size: 16px;
+}
+
+.in_bad{
+        width: 147%;
+    position: relative;
+    text-align: left;
+    left: -18px;
+}
+
+.in_mailbox2 {
+    background-color: white;
+    border-radius: 8px;
+    width: 143%;
+    height: 34px;
+    position: relative;
+    left: -42px;
+    margin-bottom: 6px;
+    font-family: 'Noto Sans Korean', 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.signin_btnn {
+    background-color: #fdd020;
+    border: 2px solid white;
+    border-radius: 8px;
+    width: 143%;
+    height: 34px;
+    position: relative;
+    left: -42px;
+    margin-bottom: 6px;
+    font-family: 'Noto Sans Korean', 'Open Sans', sans-serif;
+}
+
+.signin_btnn:hover{
+    background-color: white;
+}
+
+.sign_bad_label {
+    background-color: #ffffff;
+    border: none;
+    color: #fdd020;
+    padding: 4px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 200;
+    position: relative;
+    left: -25px;
+    bottom: 2px;
+    /* top: -8px; */
+    margin-top: 24px;
+}
+
+.exp{
+    color: white !important;
+    font-size: 14px !important;
+    font-weight: 100 !important;
+    margin-left: -19px !important;
+    margin-top: -20px !important;
+    margin-bottom: 21px !important;
+}
+
+.orii{
+        margin-bottom: 28px;
+    margin-top: -31px;
+}

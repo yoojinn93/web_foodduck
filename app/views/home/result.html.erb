@@ -38,7 +38,7 @@
 					<a href="#menu" class="menu-link"><img src="/assets/left-top.gif" class="nav-img"/></a>
 				</div>
 				<div class="nav-name">
-					<h5 class="pro-link nav_prof">PROFILE</h5>
+					<a href="/home/product_detail" style="text-decoration: none"><h5 class="pro-link uuuset"> REVIEW </h5></a>
 				</div>
 				<div class="nav-right">
 				    <a href="/home/index"><img src="/assets/go-home.gif" class="nav-img"/></a>
@@ -54,17 +54,17 @@
 		<div class="main-shade">
 			<div class="food_search">
 								<form>
-									<input type="search" value="검색어를 입력해주세요!" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '검색어를 입력해주세요!';}" required="">
-									<input type="submit" value=" ">
-									<div class="search_click"></div>
+									<input type="search" placeholder="검색어를 입력해주세요!" >
+									  <a href="/home/product_detail"><input type="submit" value=" "></a>
+  									<div class="search_click" onclick="DoNav('/home/product_detail')"></div>
 								</form>
 						</div>
 						<div class="search_rec">
 								<p>
-									<a href="http://m.naver.com" class="search_rec_k"> #아기과자 </a>
-									<a href="http://m.naver.com" class="search_rec_k">#과자</a>
-									<a href="http://m.naver.com" class="search_rec_k">#GMO</a>
-									<a href="http://m.naver.com" class="search_rec_k">#감자칩</a>
+									<a href="/home/product_detail" class="search_rec_k"> #아기과자 </a>
+									<a href="/home/product_detail" class="search_rec_k">#과자</a>
+									<a href="/home/product_detail" class="search_rec_k">#GMO</a>
+									<a href="/home/product_detail" class="search_rec_k">#감자칩</a>
 								</p>
 						</div>
 				   
@@ -116,10 +116,19 @@
 															<div class="detail" id="about">
 																<div class='kkk'>
 																	<div class='kkkk'>
+																		<div class="info">
+																			<h3>제조사 정보</h3>
+																		</div>
 																	</div>
 																</div>
-																<div class='information'>Image</div>
-																<div class='information'>Contents</div>
+														<div class="each_product_r">
+															<div class="product_top">
+																<img class="product_top" src="/assets/Orion.png" width="110px" height="110px" style="margin-left:65px;">
+															</div>
+															<div class="clearfix"> </div>
+															<p>(주)오리온은 대한민국의 제과 회사 이다. 오리온그룹의 계열사 및 주력 회사 이며, 초코파이로 유명하다. 1934년 4월 13일에 설립하였으며 본사는 서울특별시 용산구 문배동에 있다.</p>
+														</div>
+															
 															</div>
 														</div>
 												
@@ -135,7 +144,29 @@
 																		</div>
 																	</div>
 																</div>
-																<p>Lorem ipsum Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit.</p>
+														
+														<div class="each_product_r">
+															<div class="product_left_r">
+																<img class="product_pic" src="/assets/pic3.png" width="110px" height="110px">
+															</div>
+															<div class="product_right">
+															    <div class="right_div" style="width:105%;">
+    																<p>
+    																    <span class="bbold">닉네임 :</span> 퉁퉁이아빠 </br>
+    																    <span class="bbold">개인평점 :</span> 
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
+    																    </br>
+    																    <span class="bbold">공감수 :</span> 137</br>
+    																    <span class="bbold">후기 :</span> 우리 퉁퉁이는 3개월차 건강한 남아에요...</br>
+    																</p>
+    															</div>
+															</div>
+															<div class="clearfix"> </div>
+														</div>
 															</div>
 														</div>
 												</div>

@@ -40,6 +40,49 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /*핸드폰폰 프레임*/
+.each_product_r{
+	text-align: left;
+	padding: 0 17px;
+}
+
+
+.vertical-container {
+     height:300px;
+     display:-webkit-flex;
+     display:flex;
+     -webkit-align-items:center;
+     align-items:center;
+     -webkit-justify-content:center;
+     justify-content:center;
+}
+
+.product_left_r
+{
+	display: inline-block;
+    border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	    margin-top: 14px;
+	    margin-bottom: 12px;
+	    margin-left: -17px;
+}
+
+.product_pic
+{
+    display: inline-block;
+    border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+
+.product_right
+{
+    border: 1px solid rgba(0, 0, 255, 0);
+	display: inline-block;
+	margin: 10px 0px 0px 0px;
+	    margin-top: 17px;
+}
+
 .contents_information{
     position: relative;
     border-bottom: solid 2px #FFD020;
@@ -78,7 +121,7 @@ h1,h2,h3,h4,h5,h6{
 
 .kkkkk{
 	float:right;
-	margin-top: 6px;
+	margin-top: 5px;
 	
 }
 
@@ -400,7 +443,7 @@ li.circle:nth-child(4),li.circle:nth-child(5) {
 .detail h3 {
     color: #616564!important;
     font-size: 1.3em;
-    line-height: 1.5em;
+    line-height: 0em;
     margin-bottom:10px!important;
     text-align: left;
 }
@@ -1486,7 +1529,7 @@ textarea {
     border: 0;
     width: 100%;
     font-size:0.9em;
-    border-bottom: 1px solid #ddd;
+    /*border-bottom: 1px solid #ddd;*/
 	color: #444;
 	background: none;
 }
@@ -1518,7 +1561,7 @@ textarea:focus ~ span {
 textarea {
       width: 100%;
       min-height: 7em;
-      border-bottom: 1px solid #ddd;
+      /*border-bottom: 1px solid #ddd;*/
       resize: none;
 }
 form {
