@@ -17,25 +17,27 @@ ActiveRecord::Schema.define(version: 20160727122310) do
     t.string   "name"
     t.string   "english"
     t.text     "information"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.integer  "checklist_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
   create_table "checklists", force: :cascade do |t|
     t.string   "title"
-    t.string   "additive"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "additive_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "registers", force: :cascade do |t|
     t.string   "title"
-    t.string   "additive"
+    t.integer  "additive_id"
     t.string   "name"
     t.string   "english"
     t.text     "information"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.integer  "checklist_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
   create_table "users", force: :cascade do |t|

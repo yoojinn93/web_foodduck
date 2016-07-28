@@ -40,6 +40,18 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /*핸드폰폰 프레임*/
+.contents_information{
+    position: relative;
+    border-bottom: solid 2px #FFD020;
+}
+
+.each_product_detail
+{
+
+	text-align: left;
+	padding: 0 17px;
+}
+
 .information{
 	display: inline-block;
     width: 150px;
@@ -381,7 +393,7 @@ li.circle:nth-child(4),li.circle:nth-child(5) {
 }
 /*상세정보*/
 .detail{
-    background: #f7f7f7;
+    background: #fff;
     padding: 2em 1em;
     text-align: center;
 }

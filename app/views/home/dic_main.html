@@ -1,0 +1,289 @@
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
+  <!-- isotope CDN -->
+  <script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
+</head>
+
+<body>
+	<div class="body-back">
+		<div class="masthead pdng-stn1">
+			<!--사이드바-->
+			<div id="menu" class="sidenav" role="navigation">
+				<div class="wrap-content">
+				<div class="nav-menu text-center">
+					<img class="nav-profile img-circle border-effect" src="/assets/ilguk.png" alt=" ">
+					<img class="side-go nav-camera" onclick="DoNav('/home/myprofile')" src="/assets/camera.gif" alt=" ">
+						<p class="nav-nickname">삼둥파파</p>
+						<button class="nav-proedit-btn" onclick="DoNav('/home/myprofile')">프로필 편집</button>
+					
+					<div class="side-go" onclick="DoNav('/home/myfood')">
+						<img class="side-nemo" src="/assets/my_food.png" alt=" ">
+							<p class="side-nemo-label">마이푸드</p>
+					</div>	
+					<div class="side-go" onclick="DoNav('/home/checklist')">
+						<img class="side-nemo" src="/assets/checklist.gif" alt=" ">
+							<p class="side-nemo-label">체크리스트</p>
+					</div>
+					<div class="side-go" onclick="DoNav('/home/qna')">
+						<img class="side-nemo" src="/assets/qna.png" alt=" ">
+							<p class="side-nemo-label">Q&A</p>
+					</div>
+					<div class="side-go" onclick="DoNav('/home/setting')">
+						<img class="side-nemo" src="/assets/setting.png" alt=" ">
+							<p class="side-nemo-label">설정</p>
+					</div>
+
+				</div>
+				</div>
+			</div>
+		</div>
+			
+			
+			<div class="phone-box wrap push">
+			    
+			    <!-- nav -->
+				<div class="navtop">
+					<div class="nav-left">
+						<a href="#menu" class="menu-link"><img src="/assets/left-top.gif" class="nav-img"/></a>
+					</div>
+					<div class="nav-name">
+						<div class="nav_dic">
+							<h5 class="pro-link"> DICTIONARY </h5>
+						</div>
+					</div>
+					<div class="nav-right">
+					    <a href="/home/index"><img src="/assets/go-home.gif" class="nav-img"/></a>
+					
+					</div>
+					<div class="clearfix"></div>
+				</div> 
+				
+				<!--리얼 바디-->
+				<div class="main-grid">
+					<div class="main-shade">
+							<div class="food_search">
+									<form>
+										<input type="search" placeholder="검색어를 입력해주세요!" >
+										  <a href="/home/product_detail"><input type="submit" value=" "></a>
+	  									<div class="search_click" onclick="DoNav('/home/product_detail')"></div>
+									</form>
+							</div>
+							<div class="search_rec">
+									<p>
+										<a href="http://m.naver.com" class="search_rec_k">구연산 </a>
+										<a href="http://m.naver.com" class="search_rec_k">사이토키닌</a>
+										<a href="http://m.naver.com" class="search_rec_k">팜유</a>
+										<a href="http://m.naver.com" class="search_rec_k">아질산나트륨</a>
+									</p>
+							</div>
+											
+							<!-- 가나다순 -->
+							<div class="big-demo" data-js-module="hero-demo">
+							
+							  <div class="ui-group">
+							    <h3 class="ui-group__title">Filter</h3>
+							    <div class="filters button-group js-radio-button-group">
+							      <button class="button is-checked" data-filter="*">전쳬</button>
+							      <button class="button" data-filter=".ㄱ">ㄱ</button>
+							      <button class="button" data-filter=".ㄴ">ㄴ</button>
+							      <button class="button" data-filter=".ㄷ">ㄷ</button>
+							    </div>
+							  </div>
+							
+							  <div class="grid">
+							      <div class="element-item transition ㄱ " data-category="transition">
+							        <h5 class="name">Mercury</h5>
+							        <p class="symbol">Hg</p>
+							        <p class="number">80</p>
+							        <p class="weight">200.59</p>
+							      </div>
+							      <div class="element-item ㄱ " data-category="metalloid">
+							        <h5 class="name">Tellurium</h5>
+							        <p class="symbol">Te</p>
+							        <p class="number">52</p>
+							        <p class="weight">127.6</p>
+							      </div>
+							      <div class="element-item post-transition ㄴ" data-category="post-transition">
+							        <h5 class="name">Bismuth</h5>
+							        <p class="symbol">Bi</p>
+							        <p class="number">83</p>
+							        <p class="weight">208.980</p>
+							      </div>
+							      <div class="element-item post-transition ㄴ" data-category="post-transition">
+							        <h5 class="name">Lead</h5>
+							        <p class="symbol">Pb</p>
+							        <p class="number">82</p>
+							        <p class="weight">207.2</p>
+							      </div>
+							      <div class="element-item transition ㄷ" data-category="transition">
+							        <h5 class="name">Gold</h5>
+							        <p class="symbol">Au</p>
+							        <p class="number">79</p>
+							        <p class="weight">196.967</p>
+							      </div>
+							      <div class="element-item alkali ㄷ" data-category="alkali">
+							        <h5 class="name">Potassium</h5>
+							        <p class="symbol">K</p>
+							        <p class="number">19</p>
+							        <p class="weight">39.0983</p>
+							      </div>
+							      <div class="element-item alkali ㄴ" data-category="alkali">
+							        <h5 class="name">Sodium</h5>
+							        <p class="symbol">Na</p>
+							        <p class="number">11</p>
+							        <p class="weight">22.99</p>
+							      </div>
+							      <div class="element-item transition ㄱ" data-category="transition">
+							        <h5 class="name">Cadmium</h5>
+							        <p class="symbol">Cd</p>
+							        <p class="number">48</p>
+							        <p class="weight">112.411</p>
+							      </div>
+							  </div>
+							
+							</div>
+							
+							  </div> 
+
+							</div> 
+											
+											
+											
+											
+											
+											<script src="/assets/dic_main.js" type="text/javascript"></script>
+											<h2 class="small_menu_accordion small_menu_active" role="tab" aria-controls="smenu_item_0"><span class="small_menu_arrow"></span></h2>
+											<div class="menu_tab_1 small_menu_content small_menu_content_active" aria-labelledby="smenu_item_0" style="display:block">
+												<div class="menu_img">
+													<div class="menu_each_product">
+															<div class="food_article" id="food_han">
+									        			        <table border="0" width="400" class="food_article_table">
+										                            <div class="button-group filters-button-group">
+																	  <button class="btn_cat is-checked" data-filter=".a"> ㄱ </button>
+																	  <button class="btn_cat" data-filter=".b"> ㄴ </button>
+																	  <button class="btn_cat" data-filter=".san"> ㄷ </button>
+																	  <button class="btn_cat" data-filter=".bal"> ㄹ </button>
+																	  <button class="btn_cat" data-filter=".tal"> ㅁ </button>
+																	  <button class="btn_cat" data-filter=".sal"> ㅂ </button></button>
+																	  <button class="btn_cat" data-filter=".yu"> ㅅ </button>
+																	  <button class="btn_cat" data-filter=".in"> ㅇ </button>
+																	  <button class="btn_cat" data-filter=".hwa"> ㅈ </button>
+																	  <button class="btn_cat" data-filter=".hap"> ㅊ </button>
+																	  <button class="btn_cat" data-filter=".sanhwa"> ㅋ </button>
+																	  <button class="btn_cat" data-filter=".sanhwa"> ㅌ </button>
+																	  <button class="btn_cat" data-filter=".sanhwa"> ㅍ </button>
+																	  <button class="btn_cat" data-filter=".sanhwa"> ㅎ </button>
+																	</div>
+									                      		</table>
+									        		        </div>
+									        		        
+															<div class="each_product">
+																<div class="grid">
+																  <div class="element-item chack " data-category="chack">
+																    <h3 class="name">Mercury</h3>
+																    <p class="symbol">Hg</p>
+																    <p class="number">80</p>
+																    <p class="weight">200.59</p>
+																  </div>
+																  <div class="element-item chack " data-category="chack">
+																    <h3 class="name">Tellurium</h3>
+																    <p class="symbol">Te</p>
+																    <p class="number">52</p>
+																    <p class="weight">127.6</p>
+																  </div>
+																  <div class="element-item san " data-category="san">
+																    <h3 class="name">Bismuth</h3>
+																    <p class="symbol">Bi</p>
+																    <p class="number">83</p>
+																    <p class="weight">208.980</p>
+																  </div>
+																  <div class="element-item san " data-category="san">
+																    <h3 class="name">Lead</h3>
+																    <p class="symbol">Pb</p>
+																    <p class="number">82</p>
+																    <p class="weight">207.2</p>
+																  </div>
+																  <div class="element-item hwa " data-category="hwa">
+																    <h3 class="name">Gold</h3>
+																    <p class="symbol">Au</p>
+																    <p class="number">79</p>
+																    <p class="weight">196.967</p>
+																  </div>
+																  <div class="element-item hwa " data-category="hwa">
+																    <h3 class="name">Potassium</h3>
+																    <p class="symbol">K</p>
+																    <p class="number">19</p>
+																    <p class="weight">39.0983</p>
+																  </div>
+																  <div class="element-item hap " data-category="hap">
+																    <h3 class="name">Sodium</h3>
+																    <p class="symbol">Na</p>
+																    <p class="number">11</p>
+																    <p class="weight">22.99</p>
+																  </div>
+																  <div class="element-item hap " data-category="hap">
+																    <h3 class="name">Cadmium</h3>
+																    <p class="symbol">Cd</p>
+																    <p class="number">48</p>
+																    <p class="weight">112.411</p>
+																  </div>
+																  <div class="element-item sanhwa " data-category="sanhwa">
+																    <h3 class="name">Calcium</h3>
+																    <p class="symbol">Ca</p>
+																    <p class="number">20</p>
+																    <p class="weight">40.078</p>
+																  </div>
+																  <div class="element-item sanhwa " data-category="sanhwa">
+																    <h3 class="name">Rhenium</h3>
+																    <p class="symbol">Re</p>
+																    <p class="number">75</p>
+																    <p class="weight">186.207</p>
+																  </div>
+																  <div class="element-item sanhwa " data-category="sanhwa">
+																    <h3 class="name">Thallium</h3>
+																    <p class="symbol">Tl</p>
+																    <p class="number">81</p>
+																    <p class="weight">204.383</p>
+																  </div>
+																  <div class="element-item sanhwa " data-category="sanhwa">
+																    <h3 class="name">Antimony</h3>
+																    <p class="symbol">Sb</p>
+																    <p class="number">51</p>
+																    <p class="weight">121.76</p>
+																  </div>
+																</div>
+											<!-- 가나다순 끝 -->
+						
+						
+						
+						
+						
+						
+					    
+	        		        <div class="foot">
+	        		        	
+	        		        </div>
+					</div>	    
+				    
+				</div>
+				
+			
+					
+	  </div>
+	</div>
+	</div>
+	<script src="/assets/jquery.nicescroll.js"></script>
+	<script src="/assets/scripts.js"></script>
+	
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+	<script src="/assets/isotope-docs.min.js"></script>
+	<script src="/assets/isotope.pkgd.js"></script>
+
+
+</body>

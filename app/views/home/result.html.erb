@@ -2,136 +2,143 @@
 <body>
 <div class="body-back">
 	<div class="masthead pdng-stn1">
-		<div id="menu" class="panel" role="navigation">
+		
+				<!--사이드바-->
+		<div id="menu" class="sidenav" role="navigation">
 			<div class="wrap-content">
-				<div class="profile-menu text-center">
-					<img class="img-circle border-effect" src="/assets/pic3.png" alt=" ">
-						<h3>John Leo</h3>
-						<p>Admin</p>
-						<div class="pro-menu">
-							<div class="logo">
-								<li><a class=" link link--yaku scroll active" href="#home"><span>H</span><span>o</span><span>m</span><span>e</span></a></li>
-								<li><a class=" link link--yaku scroll" href="#about"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span></a></li>
-								<li><a class=" link link--yaku scroll" href="#service"><span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span></a></li>
-								<li><a class=" link link--yaku scroll" href="#recipes"><span>O</span><span>u</span><span>r</span> <span>R</span><span>e</span><span>c</span><span>i</span><span>p</span><span>e</span><span>s</span></a></li>
-								<li><a class=" link link--yaku scroll" href="#gallery"><span>G</span><span>a</span><span>l</span><span>l</span><span>e</span><span>r</span><span>y</span></a></li>
-								<li><a class=" link link--yaku scroll" href="#contact"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></a></li>
-							</div>
-				
-
-						</div>
+				<div class="nav-menu text-center">
+						<img class="nav-profile img-circle border-effect" src="/assets/ilguk.png" alt=" ">
+					<img class="side-go nav-camera" onclick="DoNav('/home/myprofile')" src="/assets/camera.gif" alt=" ">
+						<p class="nav-nickname">삼둥파파</p>
+						<button class="nav-proedit-btn" onclick="DoNav('/home/myprofile')">프로필 편집</button>
+					
+					<div class="side-go" onclick="DoNav('/home/myfood')">
+						<img class="side-nemo" src="/assets/my_food.png" alt=" ">
+							<p class="side-nemo-label">마이푸드</p>
+					</div>	
+					<div class="side-go" onclick="DoNav('/home/checklist')">
+						<img class="side-nemo" src="/assets/checklist.gif" alt=" ">
+							<p class="side-nemo-label">체크리스트</p>
+					</div>
+					<div class="side-go" onclick="DoNav('/home/qna')">
+						<img class="side-nemo" src="/assets/qna.png" alt=" ">
+							<p class="side-nemo-label">Q&A</p>
+					</div>
+					<div class="side-go" onclick="DoNav('/home/setting')">
+						<img class="side-nemo" src="/assets/setting.png" alt=" ">
+							<p class="side-nemo-label">설정</p>
+					</div>
+				</div>
 				</div>
 			</div>
-		</div>
-		<div class="phone-box wrap push" id="home">
-			<div class="menu-notifyy">
-				<div class="profile-left">
-					<a href="#menu" class="menu-link"><i class="fa fa-list-ul"></i></a>
+		<div class="phone-box wrap push">
+		    <!-- nav -->
+			<div class="navtop">
+				<div class="nav-left">
+					<a href="#menu" class="menu-link"><img src="/assets/left-top.gif" class="nav-img"/></a>
 				</div>
-				<div class="Profile-mid">
-					<h5 class="pro-link">검색결과</h5>
+				<div class="nav-name">
+					<h5 class="pro-link nav_prof">PROFILE</h5>
 				</div>
-				<div class="Profile-right">
-					<div id="dd1" class="wrapper-dropdown-1" tabindex="1"><i class="fa fa-user"></i>
-						<ul class="dropdown">
-							<li><a href="#">Edit Profile </a></li>
-							<li><a href="#">Help</a></li>
-							<li><a href="#">Activity log</a></li>
-							<li><a href="#">Log Out</a></li>
-						</ul>
-							<script type="text/javascript">
-														function DropDown(el) {
-															this.dd = el;
-															this.initEvents();
-														}
-														DropDown.prototype = {
-															initEvents : function() {
-																var obj = this;
-											
-																obj.dd.on('click', function(event){
-																	$(this).toggleClass('active');
-																	event.stopPropagation();
-																});	
-															}
-														}
-														$(function() {
-											
-															var dd = new DropDown( $('#dd1') );
-											
-															$(document).click(function() {
-																// all dropdowns
-																$('.wrapper-dropdown-1').removeClass('active');
-															});
-											
-														});
-							</script>
-					</div>
+				<div class="nav-right">
+				    <a href="/home/index"><img src="/assets/go-home.gif" class="nav-img"/></a>
 				</div>
 				<div class="clearfix"></div>
 			</div> 
-			<div class="result1">
-				<div class="result2">
-						<div class="banner_search">
+			
+			<!--리얼바디-->
+	
+			
+			
+	<div class="main-grid">
+		<div class="main-shade">
+			<div class="food_search">
 								<form>
-									<input type="search" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}" required="">
+									<input type="search" value="검색어를 입력해주세요!" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '검색어를 입력해주세요!';}" required="">
 									<input type="submit" value=" ">
+									<div class="search_click"></div>
 								</form>
-						</div> 
-
-				
-				</div>
-			</div>
-		<div class="detail">
-					<div class="detail" id="about">
-						<div class='kkk'>
-							<div class='kkkk'>
-								<div class="info" style="height:27px">
-									<h3>제품성분 정보</h3>
-								</div>
-								<div class='kkkkk'style="height:31px">
-									<button class="chanjun">자세히보기</button>
-								</div>
-							</div>
 						</div>
-						<ul>
-							<li class='contents'>가공땅콩(중국산/땅콩,밀가루,물엿)</li>
-							<li class='contents'>찰옥수수전분(이탈리아산73%, 수입산27%)</li>
-							<li class='contents'>밀가루</li>
-							<li class='contents'>백설탕</li>
-							<li class='contents'>혼합식용유(해바라기유50%, 팜올레인유50%)</li>
-						</ul>
-					</div>
-		</div>
-		
-		<div class="detail">
-					<div class="detail" id="about">
-						<div class='kkk'>
-							<div class='kkkk'>
-								<div class="info" style="height:27px">
-									<h3>제조사 정보</h3>
-								</div>
-								<div class='kkkkk'style="height:31px">
-									<button class="chanjun">자세히보기</button>
-								</div>
-							</div>
+						<div class="search_rec">
+								<p>
+									<a href="http://m.naver.com" class="search_rec_k"> #아기과자 </a>
+									<a href="http://m.naver.com" class="search_rec_k">#과자</a>
+									<a href="http://m.naver.com" class="search_rec_k">#GMO</a>
+									<a href="http://m.naver.com" class="search_rec_k">#감자칩</a>
+								</p>
 						</div>
-						<div class='information'>Image</div>
-						<div class='information'>Contents</div>
-					</div>
+				   
+        			    <div class="menu_img">
+												<div class="menu_each_product">
+														
+														<div class="each_product_detail">
+															<div class="product_left">
+																<img class="product_pic" src="/assets/오징어땅콩.png" width="110px" height="110px">
+															</div>
+															<div class="product_right">
+															    <div class="right_div">
+    																<p>
+    																    <span class="bbold">제품명 :</span> 오징어땅콩 </br>
+    																    <span class="bbold">제조사 :</span> 오리온 제과 </br>
+    																    <span class="bbold">리뷰평점 :</span> 
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
+    																    </br>
+    																    <span class="bbold"> #아이과자 #오리온 #오징어땅콩 #해산물 #첨가물</span>
+    																</p>
+    															</div>
+															</div>
+															<div class="clearfix"> </div>
+															
+														<div class="detail">
+															<div class="detail" id="about">
+																<div class='kkk'>
+																	<div class='kkkk'>
+																		<div class="info" style="height:27px">
+																			<h3 class = result_info>제품성분 정보</h3>
+																		</div>
+																	</div>
+																</div>
+																<ul>
+																	<li class='contents'>가공땅콩(중국산/땅콩,밀가루,물엿)</li>
+																	<li class='contents'>찰옥수수전분(이탈리아산73%, 수입산27%)</li>
+																	<li class='contents'>밀가루</li>
+																	<li class='contents'>백설탕</li>
+																	<li class='contents'>혼합식용유(해바라기유50%, 팜올레인유50%)</li>
+																</ul>
+															</div>
+														</div>
+												
+														<div class="detail">
+															<div class="detail" id="about">
+																<div class='kkk'>
+																	<div class='kkkk'>
+																	</div>
+																</div>
+																<div class='information'>Image</div>
+																<div class='information'>Contents</div>
+															</div>
+														</div>
+												
+														<div class="detail">
+															<div class="detail" id="about">
+																<div class='kkk'>
+																	<div class='kkkk'>
+																		<div class="info">
+																			<h3>제품리뷰</h3>
+																		</div>
+																		<div class='kkkkk'>
+																			<a href="/home/review"><button class="chanjun">자세히보기</button></a>
+																		</div>
+																	</div>
+																</div>
+																<p>Lorem ipsum Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit.</p>
+															</div>
+														</div>
+												</div>
+						
 		</div>
-		
-		<div class="detail">
-					<div class="detail" id="about">
-						<div class='kkk'>
-							<div class='kkkk'>
-								<div class="info">
-									<h3>제품리뷰</h3>
-								</div>
-								<div class='kkkkk'>
-									<button class="chanjun">자세히보기</button>
-								</div>
-							</div>
-						</div>
-						<p>Lorem ipsum Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit.</p>
-					</div>
-		</div>
+	</div>

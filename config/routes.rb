@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
-  devise_for :users
+    devise_for :users, controllers: {
+    sessions: 'user/sessions',
+    registrations: 'user/registrations'
+  }
   # get 'index' => 'home#index'
-  # get 'main' => 'home#main'
+  get 'main' => 'home#main'
   # get 'single' => 'home#single'
   #get 'result' => 'home#result'
   
@@ -10,8 +13,12 @@ Rails.application.routes.draw do
   post ':controller(/:action(/:id))'
   root 'home#phone'
   
-  get 'myfood' => 'home#myfood'
-  get 'customer' => 'home#customer'
+  #get 'myfood' => 'home#myfood'
+  #get 'qna' => 'home#qna'
+  #get 'customer' => 'home#customer'
+  #get 'setting' => 'home#setting'
+  get 'dic_main' => 'home#dic_main'
+  get 'dic_id' => 'home#dic_id'
   get 'screen' => 'home#screen'
 
   # The priority is based upon order of creation: first created -> highest priority.

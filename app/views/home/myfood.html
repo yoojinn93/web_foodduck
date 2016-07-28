@@ -8,9 +8,10 @@
 			<div class="wrap-content">
 				<div class="nav-menu text-center">
 					<img class="nav-profile img-circle border-effect" src="/assets/ilguk.png" alt=" ">
-						<img class="side-go nav-camera" src="/assets/camera.gif" alt=" ">
+						<img class="side-go nav-camera" onclick="DoNav('/home/myprofile')" src="/assets/camera.gif" alt=" ">
 						<p class="nav-nickname">삼둥파파</p>
-						<button class="nav-proedit-btn">프로필 편집</button>
+						<button class="nav-proedit-btn" onclick="DoNav('/home/myprofile')">프로필 편집</button>
+					
 					<div class="side-go" onclick="DoNav('/home/myfood')">
 						<img class="side-nemo" src="/assets/my_food.png" alt=" ">
 							<p class="side-nemo-label">마이푸드</p>
@@ -19,11 +20,11 @@
 						<img class="side-nemo" src="/assets/checklist.gif" alt=" ">
 							<p class="side-nemo-label">체크리스트</p>
 					</div>
-					<div class="side-go" onclick="DoNav('/home/checklist')">
+					<div class="side-go" onclick="DoNav('/home/qna')">
 						<img class="side-nemo" src="/assets/qna.png" alt=" ">
 							<p class="side-nemo-label">Q&A</p>
 					</div>
-					<div class="side-go" onclick="DoNav('/home/checklist')">
+					<div class="side-go" onclick="DoNav('/home/setting')">
 						<img class="side-nemo" src="/assets/setting.png" alt=" ">
 							<p class="side-nemo-label">설정</p>
 					</div>
@@ -69,7 +70,7 @@
 						<!-- TAB JS -->
 						
 						<div class="small_menu">
-								<div id="horizontalTab" style="display: block; width: 101%; margin: -2px;">
+								<div id="horizontalTab">
 									  <ul class="small_menu_list">
 										  <li class="small_menu_item small_menu_active" aria-controls="smenu_item_0" role="tab"><span> 관심상품 </span></li>
 										  <li class="small_menu_item" aria-controls="smenu_item_1" role="tab"><span> 주의상품 </span></li>
@@ -87,21 +88,23 @@
 														
 														<div class="each_product">
 															<div class="product_left">
-																<img class="product_pic" src="/assets/오징어땅콩.png" width="100px" height="100px">
+																<img class="product_pic" src="/assets/오징어땅콩.png" width="110px" height="110px">
 															</div>
 															<div class="product_right">
 															    <div class="right_div">
     																<p>
-    																    <b>제품명 :</b> &nbsp; 오징어땅콩 </br>
-    																    <b>제조사 :</b> &nbsp; 오리온 제과 </br>
-    																    <b>리뷰평점 :</b> &nbsp;
+    																    <span class="bbold">제품명 :</span> 오징어땅콩 </br>
+    																    <span class="bbold">제조사 :</span> 오리온 제과 </br>
+    																    <span class="bbold">나의 평점 :</span> 
     																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
     																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
     																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
     																    <img src="/assets/star_non" width="15" height="15" class="star_review">
     																    <img src="/assets/star_non" width="15" height="15" class="star_review">
     																    </br>
-    																 	<center><a href="#"><div class="more_about"><p> 자세히 보기 </p></div></a></center>
+    																 	<center>
+    																 		<a href="/home/main"><button class="food_detail_btn">자세히 보기</button></a>
+    																 	</center>
     																</p>
     															</div>
 															</div>
@@ -110,21 +113,23 @@
 														
 														<div class="each_product">
 															<div class="product_left">
-																<img class="product_pic" src="assets/쿠크다스.png" width="100px" height="100px">
+																<img class="product_pic" src="/assets/쿠크다스.png" width="110px" height="110px">
 															</div>
 															<div class="product_right">
 															    <div class="right_div">
     																<p>
-    																    <b>제품명 :</b>&nbsp; 쿠크다스 화이트 </br>
-    																    <b>제조사 :</b>&nbsp; 크라운 제과 </br>
-    																    <b>리뷰평점 :</b>&nbsp;
-    																    <img src="assets/star_colored" width="15" height="15" class="star_review">
-    																    <img src="assets/star_colored" width="15" height="15" class="star_review">
-    																    <img src="assets/star_non" width="15" height="15" class="star_review">
-    																    <img src="assets/star_non" width="15" height="15" class="star_review">
-    																    <img src="assets/star_non" width="15" height="15" class="star_review">
+    																    <span class="bbold">제품명 :</span> 쿠크다스 화이트 </br>
+    																    <span class="bbold">제조사 :</span> 크라운 제과 </br>
+    																    <span class="bbold">나의 평점 :</span> 
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
     																    </br>
-    																    <center><a href="#"><div class="more_about"><p> 자세히 보기 </p></div></a></center>
+    																 	<center>
+    																 		<a href="/home/main"><button class="food_detail_btn">자세히 보기</button></a>
+    																 	</center>
     																</p>
     															</div>
 															</div>
@@ -133,21 +138,23 @@
 														
 														<div class="each_product">
 															<div class="product_left">
-																<img class="product_pic" src="assets/포카칩.png" width="100px" height="100px">
+																<img class="product_pic" src="/assets/포카칩.png" width="110px" height="110px">
 															</div>
 															<div class="product_right">
 															    <div class="right_div">
     																<p>
-    																    <b>제품명 :</b>&nbsp; 포카칩 오리지널 </br>
-    																    <b>제조사 :</b>&nbsp; 오리온 제과 </br>
-    																    <b>리뷰평점 :</b>&nbsp;
-    																    <img src="assets/star_colored" width="15" height="15" class="star_review">
-    																    <img src="assets/star_colored" width="15" height="15" class="star_review">
-    																    <img src="assets/star_colored" width="15" height="15" class="star_review">
-    																    <img src="assets/star_colored" width="15" height="15" class="star_review">
-    																    <img src="assets/star_non" width="15" height="15" class="star_review">
+    																    <span class="bbold">제품명 :</span> 포카칩 오리지널 </br>
+    																    <span class="bbold">제조사 :</span> 오리온 제과 </br>
+    																    <span class="bbold">나의 평점 :</span> 
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
     																    </br>
-    																    <center><a href="#"><div class="more_about"><p> 자세히 보기 </p></div></a></center>
+    																 	<center>
+    																 		<a href="/home/main"><button class="food_detail_btn">자세히 보기</button></a>
+    																 	</center>
     																</p>
 																</div>
 															</div>
@@ -156,22 +163,24 @@
 														
 														<div class="each_product">
 															<div class="product_left">
-																<img class="product_pic" src="assets/도도한나쵸.png" width="100px" height="100px">
+																<img class="product_pic" src="/assets/도도한나쵸.png" width="110px" height="110px">
 															</div>
 															<div class="product_right">
 																<div class="right_div">
 																<p>
-																    <b>제품명 :</b>&nbsp; 도도한 나쵸 오리지널 </br>
-																    <b>제조사 :</b>&nbsp; 오리온 제과 </br>
-																    <b>리뷰평점 :</b>&nbsp;
-																    <img src="assets/star_colored" width="15" height="15" class="star_review">
-    																<img src="assets/star_colored" width="15" height="15" class="star_review">
-    																<img src="assets/star_colored" width="15" height="15" class="star_review">
-    																<img src="assets/star_non" width="15" height="15" class="star_review">
-    																<img src="assets/star_non" width="15" height="15" class="star_review">
-																    </br>
-																    <center><a href="#"><div class="more_about"><p> 자세히 보기 </p></div></a></center>
-																</p>
+    																    <span class="bbold">제품명 :</span> 도도한 나쵸 오리지널 </br>
+    																    <span class="bbold">제조사 :</span> 오리온 제과 </br>
+    																    <span class="bbold">나의 평점 :</span> 
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
+    																    </br>
+    																 	<center>
+    																 		<a href="/home/main"><button class="food_detail_btn">자세히 보기</button></a>
+    																 	</center>
+    																</p>
 																</div>
 															</div>
 															<div class="clearfix"> </div>
@@ -189,21 +198,23 @@
 														
 														<div class="each_product">
 															<div class="product_left">
-																<img class="product_pic" src="/assets/오징어땅콩.png" width="100px" height="100px">
+																<img class="product_pic" src="/assets/홈런볼.png" width="110px" height="110px">
 															</div>
 															<div class="product_right">
 															    <div class="right_div">
     																<p>
-    																    <b>제품명 :</b> &nbsp; 오징어땅콩 </br>
-    																    <b>제조사 :</b> &nbsp; 오리온 제과 </br>
-    																    <b>리뷰평점 :</b> &nbsp;
+    																    <span class="bbold">제품명 :</span> 홈런볼 저지방우유 </br>
+    																    <span class="bbold">제조사 :</span> 해태 제과 </br>
+    																    <span class="bbold">나의 평점 :</span> 
     																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
-    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
-    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
     																    <img src="/assets/star_non" width="15" height="15" class="star_review">
     																    <img src="/assets/star_non" width="15" height="15" class="star_review">
     																    </br>
-    																 	<center><a href="#"><div class="more_about"><p> 자세히 보기 </p></div></a></center>
+    																 	<center>
+    																 		<a href="/home/main"><button class="food_detail_btn">자세히 보기</button></a>
+    																 	</center>
     																</p>
     															</div>
 															</div>
@@ -212,21 +223,23 @@
 														
 														<div class="each_product">
 															<div class="product_left">
-																<img class="product_pic" src="assets/쿠크다스.png" width="100px" height="100px">
+																<img class="product_pic" src="/assets/웨하스.png" width="110px" height="110px">
 															</div>
 															<div class="product_right">
 															    <div class="right_div">
     																<p>
-    																    <b>제품명 :</b>&nbsp; 쿠크다스 화이트 </br>
-    																    <b>제조사 :</b>&nbsp; 크라운 제과 </br>
-    																    <b>리뷰평점 :</b>&nbsp;
-    																    <img src="assets/star_colored" width="15" height="15" class="star_review">
-    																    <img src="assets/star_colored" width="15" height="15" class="star_review">
-    																    <img src="assets/star_non" width="15" height="15" class="star_review">
-    																    <img src="assets/star_non" width="15" height="15" class="star_review">
-    																    <img src="assets/star_non" width="15" height="15" class="star_review">
+    																    <span class="bbold">제품명 :</span> 유기농 웨하스 </br>
+    																    <span class="bbold">제조사 :</span> 크라운 제과 </br>
+    																    <span class="bbold">나의 평점 :</span> 
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
     																    </br>
-    																    <center><a href="#"><div class="more_about"><p> 자세히 보기 </p></div></a></center>
+    																 	<center>
+    																 		<a href="/home/main"><button class="food_detail_btn">자세히 보기</button></a>
+    																 	</center>
     																</p>
     															</div>
 															</div>
@@ -235,21 +248,23 @@
 														
 														<div class="each_product">
 															<div class="product_left">
-																<img class="product_pic" src="assets/포카칩.png" width="100px" height="100px">
+																<img class="product_pic" src="/assets/아몬드후레이크.png" width="110px" height="110px">
 															</div>
 															<div class="product_right">
 															    <div class="right_div">
     																<p>
-    																    <b>제품명 :</b>&nbsp; 포카칩 오리지널 </br>
-    																    <b>제조사 :</b>&nbsp; 오리온 제과 </br>
-    																    <b>리뷰평점 :</b>&nbsp;
-    																    <img src="assets/star_colored" width="15" height="15" class="star_review">
-    																    <img src="assets/star_colored" width="15" height="15" class="star_review">
-    																    <img src="assets/star_colored" width="15" height="15" class="star_review">
-    																    <img src="assets/star_colored" width="15" height="15" class="star_review">
-    																    <img src="assets/star_non" width="15" height="15" class="star_review">
+    																    <span class="bbold">제품명 :</span> 아몬드 후레이크 </br>
+    																    <span class="bbold">제조사 :</span> 동서 식품 </br>
+    																    <span class="bbold">나의 평점 :</span> 
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
     																    </br>
-    																    <center><a href="#"><div class="more_about"><p> 자세히 보기 </p></div></a></center>
+    																 	<center>
+    																 		<a href="/home/main"><button class="food_detail_btn">자세히 보기</button></a>
+    																 	</center>
     																</p>
 																</div>
 															</div>
@@ -258,22 +273,24 @@
 														
 														<div class="each_product">
 															<div class="product_left">
-																<img class="product_pic" src="assets/도도한나쵸.png" width="100px" height="100px">
+																<img class="product_pic" src="/assets/젤리데이복숭아.png" width="110px" height="110px">
 															</div>
 															<div class="product_right">
 																<div class="right_div">
 																<p>
-																    <b>제품명 :</b>&nbsp; 도도한 나쵸 오리지널 </br>
-																    <b>제조사 :</b>&nbsp; 오리온 제과 </br>
-																    <b>리뷰평점 :</b>&nbsp;
-																    <img src="assets/star_colored" width="15" height="15" class="star_review">
-    																<img src="assets/star_colored" width="15" height="15" class="star_review">
-    																<img src="assets/star_colored" width="15" height="15" class="star_review">
-    																<img src="assets/star_non" width="15" height="15" class="star_review">
-    																<img src="assets/star_non" width="15" height="15" class="star_review">
-																    </br>
-																    <center><a href="#"><div class="more_about"><p> 자세히 보기 </p></div></a></center>
-																</p>
+    																    <span class="bbold">제품명 :</span> 젤리데이 복숭아 </br>
+    																    <span class="bbold">제조사 :</span> 오리온 제과 </br>
+    																    <span class="bbold">나의 평점 :</span> 
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
+    																    </br>
+    																 	<center>
+    																 		<a href="/home/main"><button class="food_detail_btn">자세히 보기</button></a>
+    																 	</center>
+    																</p>
 																</div>
 															</div>
 															<div class="clearfix"> </div>
@@ -291,21 +308,23 @@
 														
 														<div class="each_product">
 															<div class="product_left">
-																<img class="product_pic" src="/assets/오징어땅콩.png" width="100px" height="100px">
+																<img class="product_pic" src="/assets/아기꼬야.png" width="110px" height="110px">
 															</div>
 															<div class="product_right">
 															    <div class="right_div">
     																<p>
-    																    <b>제품명 :</b> &nbsp; 오징어땅콩 </br>
-    																    <b>제조사 :</b> &nbsp; 오리온 제과 </br>
-    																    <b>나의평점 :</b> &nbsp;
+    																    <span class="bbold">제품명 :</span> 아기꼬야 </br>
+    																    <span class="bbold">제조사 :</span> 남양 유업 </br>
+    																    <span class="bbold">나의 평점 :</span> 
     																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
     																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
     																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
-    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
-    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
     																    </br>
-    																 	<center><a href="#"><div class="more_about"><p> 자세히 보기 </p></div></a></center>
+    																 	<center>
+    																 		<a href="/home/main"><button class="food_detail_btn">자세히 보기</button></a>
+    																 	</center>
     																</p>
     															</div>
 															</div>
@@ -314,21 +333,23 @@
 														
 														<div class="each_product">
 															<div class="product_left">
-																<img class="product_pic" src="assets/쿠크다스.png" width="100px" height="100px">
+																<img class="product_pic" src="/assets/브라우니.png" width="110px" height="110px">
 															</div>
 															<div class="product_right">
 															    <div class="right_div">
     																<p>
-    																    <b>제품명 :</b>&nbsp; 쿠크다스 화이트 </br>
-    																    <b>제조사 :</b>&nbsp; 크라운 제과 </br>
-    																    <b>나의평점 :</b>&nbsp;
-    																    <img src="assets/star_colored" width="15" height="15" class="star_review">
-    																    <img src="assets/star_colored" width="15" height="15" class="star_review">
-    																    <img src="assets/star_non" width="15" height="15" class="star_review">
-    																    <img src="assets/star_non" width="15" height="15" class="star_review">
-    																    <img src="assets/star_non" width="15" height="15" class="star_review">
+    																    <span class="bbold">제품명 :</span> 마켓오 브라우니 </br>
+    																    <span class="bbold">제조사 :</span> 오리온 제과 </br>
+    																    <span class="bbold">나의 평점 :</span> 
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
     																    </br>
-    																    <center><a href="#"><div class="more_about"><p> 자세히 보기 </p></div></a></center>
+    																 	<center>
+    																 		<a href="/home/main"><button class="food_detail_btn">자세히 보기</button></a>
+    																 	</center>
     																</p>
     															</div>
 															</div>
@@ -337,21 +358,23 @@
 														
 														<div class="each_product">
 															<div class="product_left">
-																<img class="product_pic" src="assets/포카칩.png" width="100px" height="100px">
+																<img class="product_pic" src="/assets/빼빼로.png" width="110px" height="110px">
 															</div>
 															<div class="product_right">
 															    <div class="right_div">
     																<p>
-    																    <b>제품명 :</b>&nbsp; 포카칩 오리지널 </br>
-    																    <b>제조사 :</b>&nbsp; 오리온 제과 </br>
-    																    <b>나의평점 :</b>&nbsp;
-    																    <img src="assets/star_colored" width="15" height="15" class="star_review">
-    																    <img src="assets/star_colored" width="15" height="15" class="star_review">
-    																    <img src="assets/star_colored" width="15" height="15" class="star_review">
-    																    <img src="assets/star_colored" width="15" height="15" class="star_review">
-    																    <img src="assets/star_non" width="15" height="15" class="star_review">
+    																    <span class="bbold">제품명 :</span> 하미멜론 빼빼로 </br>
+    																    <span class="bbold">제조사 :</span> 롯데 제과 </br>
+    																    <span class="bbold">나의 평점 :</span> 
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
     																    </br>
-    																    <center><a href="#"><div class="more_about"><p> 자세히 보기 </p></div></a></center>
+    																 	<center>
+    																 		<a href="/home/main"><button class="food_detail_btn">자세히 보기</button></a>
+    																 	</center>
     																</p>
 																</div>
 															</div>
@@ -360,22 +383,24 @@
 														
 														<div class="each_product">
 															<div class="product_left">
-																<img class="product_pic" src="assets/도도한나쵸.png" width="100px" height="100px">
+																<img class="product_pic" src="/assets/바나나맛우유.png" width="110px" height="110px">
 															</div>
 															<div class="product_right">
 																<div class="right_div">
 																<p>
-																    <b>제품명 :</b>&nbsp; 도도한 나쵸 오리지널 </br>
-																    <b>제조사 :</b>&nbsp; 오리온 제과 </br>
-																    <b>나의평점 :</b>&nbsp;
-																    <img src="assets/star_colored" width="15" height="15" class="star_review">
-    																<img src="assets/star_colored" width="15" height="15" class="star_review">
-    																<img src="assets/star_colored" width="15" height="15" class="star_review">
-    																<img src="assets/star_non" width="15" height="15" class="star_review">
-    																<img src="assets/star_non" width="15" height="15" class="star_review">
-																    </br>
-																    <center><a href="#"><div class="more_about"><p> 자세히 보기 </p></div></a></center>
-																</p>
+    																    <span class="bbold">제품명 :</span> 바나나맛우유 </br>
+    																    <span class="bbold">제조사 :</span> 빙그레 </br>
+    																    <span class="bbold">나의 평점 :</span> 
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
+    																    </br>
+    																 	<center>
+    																 		<a href="/home/main"><button class="food_detail_btn">자세히 보기</button></a>
+    																 	</center>
+    																</p>
 																</div>
 															</div>
 															<div class="clearfix"> </div>

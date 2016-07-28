@@ -1,15 +1,15 @@
 
 <div class="body-back">
 	<div class="masthead pdng-stn1">
-		
 		<!--사이드바-->
 		<div id="menu" class="sidenav" role="navigation">
 			<div class="wrap-content">
 				<div class="nav-menu text-center">
 					<img class="nav-profile img-circle border-effect" src="/assets/ilguk.png" alt=" ">
-						<img class="side-go nav-camera" src="/assets/camera.gif" alt=" ">
+					<img class="side-go nav-camera" onclick="DoNav('/home/myprofile')" src="/assets/camera.gif" alt=" ">
 						<p class="nav-nickname">삼둥파파</p>
-						<button class="nav-proedit-btn">프로필 편집</button>
+						<button class="nav-proedit-btn" onclick="DoNav('/home/myprofile')">프로필 편집</button>
+					
 					<div class="side-go" onclick="DoNav('/home/myfood')">
 						<img class="side-nemo" src="/assets/my_food.png" alt=" ">
 							<p class="side-nemo-label">마이푸드</p>
@@ -18,11 +18,11 @@
 						<img class="side-nemo" src="/assets/checklist.gif" alt=" ">
 							<p class="side-nemo-label">체크리스트</p>
 					</div>
-					<div class="side-go" onclick="DoNav('/home/checklist')">
+					<div class="side-go" onclick="DoNav('/home/qna')">
 						<img class="side-nemo" src="/assets/qna.png" alt=" ">
 							<p class="side-nemo-label">Q&A</p>
 					</div>
-					<div class="side-go" onclick="DoNav('/home/checklist')">
+					<div class="side-go" onclick="DoNav('/home/setting')">
 						<img class="side-nemo" src="/assets/setting.png" alt=" ">
 							<p class="side-nemo-label">설정</p>
 					</div>
@@ -45,40 +45,7 @@
 				</div>
 				<div class="nav-right">
 				    <a href="/home/index"><img src="/assets/go-home.gif" class="nav-img"/></a>
-					<div id="dd1" class="wrapper-dropdown-1" tabindex="1"><i class="fa fa-user"></i>
-						<ul class="dropdown">
-							<li><a href="#">Edit nav </a></li>
-							<li><a href="#">Help</a></li>
-							<li><a href="#">Activity log</a></li>
-							<li><a href="/users/sign_out">Log Out</a></li>
-						</ul>
-							<script type="text/javascript">
-														function DropDown(el) {
-															this.dd = el;
-															this.initEvents();
-														}
-														DropDown.prototype = {
-															initEvents : function() {
-																var obj = this;
-											
-																obj.dd.on('click', function(event){
-																	$(this).toggleClass('active');
-																	event.stopPropagation();
-																});	
-															}
-														}
-														$(function() {
-											
-															var dd = new DropDown( $('#dd1') );
-											
-															$(document).click(function() {
-																// all dropdowns
-																$('.wrapper-dropdown-1').removeClass('active');
-															});
-											
-														});
-							</script>
-					</div>
+				
 				</div>
 				<div class="clearfix"></div>
 			</div> 
@@ -88,17 +55,17 @@
 				<div class="main-shade">
 						<div class="food_search">
 								<form>
-									<input type="search" value="검색어를 입력해주세요!" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '검색어를 입력해주세요!';}" required="">
-									<input type="submit" value=" ">
-									<div class="search_click"></div>
+									<input type="search" placeholder="검색어를 입력해주세요!" >
+									  <a href="/home/product_detail"><input type="submit" value=" "></a>
+  									<div class="search_click" onclick="DoNav('/home/product_detail')"></div>
 								</form>
 						</div>
 						<div class="search_rec">
 								<p>
-									<a href="http://m.naver.com" class="search_rec_k"> #아기과자 </a>
-									<a href="http://m.naver.com" class="search_rec_k">#과자</a>
-									<a href="http://m.naver.com" class="search_rec_k">#GMO</a>
-									<a href="http://m.naver.com" class="search_rec_k">#감자칩</a>
+									<a class="search_rec_k"> #아기과자 </a>
+									<a class="search_rec_k">#과자</a>
+									<a class="search_rec_k">#GMO</a>
+									<a class="search_rec_k">#감자칩</a>
 								</p>
 						</div>
 				    
@@ -166,13 +133,13 @@
         			    <div class="food_article">
         			        <table border="0" width="400" class="food_article_table">
                             <tr onclick="DoNav('http://m.news.naver.com/read.nhn?mode=LSD&mid=sec&sid1=102&oid=020&aid=0002990803')">
-                            <td class="food_article_line indent">해태제과 ‘홈런볼 저지방우유’ 회수 조치…왜?</td>
+                            <td class="food_article_line indent">해태제과 ‘홈런볼 저지방우유’ 회수 조치...</td>
                             </tr>
                             <tr onclick="DoNav('http://m.news.naver.com/read.nhn?mode=LSD&mid=sec&sid1=102&oid=003&aid=0007359622')">
-                            <td class="food_article_line indent">참기름서 발암물질 '벤조피렌' 초과 검출…회수</td>
+                            <td class="food_article_line indent">참기름서 발암물질 '벤조피렌' 초과 검출...</td>
                             </tr>
                             <tr onclick="DoNav('http://m.news.naver.com/read.nhn?mode=LSD&mid=sec&sid1=102&oid=310&aid=0000048082')">
-                            <td class="food_article_line indent">삼진식품 어묵 회수…유통기한 지난 원료 써</td>
+                            <td class="food_article_line indent">삼진식품 어묵 회수…유통기한 지난 원료...</td>
                             </tr>
                             <tr onclick="DoNav('http://m.news.naver.com/read.nhn?mode=LSD&mid=sec&sid1=101&oid=421&aid=0001861760')">
                             <td class="food_article_line indent">유통기한 속인 초코파이·유산균제품</td>
@@ -184,8 +151,8 @@
         		        </div>
         		        
         		         <div class="food_dic_label">
-        		         	<p>성분백과
-        		         	<button class="food_dic_label_btn">더 보기</button>
+        		         	<p onclick="DoNav('/home/dic_main')">성분백과
+        		         	<button class="food_dic_label_btn" onclick="DoNav('/home/dic_main')">더 보기</button>
         		         	</p>
         		         </div>
         		         <div class="food_dic">

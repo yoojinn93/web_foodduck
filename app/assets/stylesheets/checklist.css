@@ -1,22 +1,45 @@
+/*체크리스트 배경*/
+.checklist_div {
+    background: url('/assets/each_checklist.png') no-repeat;
+    min-height: 516px;
+    background-size: 368px 584px;
+    /*margin-top: 10px;*/
+    /* margin-left: 7px; */
+    background-color: white;
+}
 
-.food_check_label {
-    margin-top: 25px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    color: #616564;
-    font-size: 1.4em;
-    font-weight: 200;
+
+.food_check_table tr {
+    height:38px;
+}
+
+/*체크리스트 위아래 공간확보 */
+.haha{
+    background-color: white;
+    height:5px;
+}
+
+.haha2{
+    background-color: white;
+    height: 5px;
+    border-top: 0.13em solid #fad119;
+    width: 92.6%;
+    margin-left: 13.8px;
+        z-index: 4;
     position: relative;
-    left: 3px;
-    margin-bottom: -3px;
-    
+}
+
+.haha3{
+    background-color: white;
+    margin-top: -5px;
+    height:10px;
 }
 table.food_check_table {
     width: 100%;
-    height: 100%;
+    height: 50%;
     cursor:pointer;
-    font-weight: 200;
+    font-weight: 100;
+    font-size: 18px;
 }
 .food_check_label_btn {
     background-color: #FDD020;
@@ -29,7 +52,7 @@ table.food_check_table {
     font-size: 15px;
     cursor: pointer;
     border-radius: 8px;
-    font-weight: 200;
+    font-weight: 100;
     position: relative;
     left: 143px;
     bottom: 2px;
@@ -43,17 +66,9 @@ table.food_check_table {
 	/*text-align: center;
 	margin-top: 25px;*/
 	font-family: 'Noto Sans Korean', 'Open Sans', sans-serif;
-	font-weight: 200;
     color: #616564;
-    font-size: 1.05em;
+    font-size: 20px;
     padding-top: 65px;
-}
-
-table.food_check_table {
-    width: 100%;
-    height: 100%;
-    cursor:pointer;
-
 }
 
 .food_check_line {
@@ -62,12 +77,23 @@ table.food_check_table {
 }
 .adder {
     width: 100px;
-    height: 100px;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
+     height: 100px; 
+    position: relative;
+    left: 239px;
+    top: 168px;
     background-color: transparent;
     border: none;
+}
+
+img.adder2 {
+    width: 90px;
+    height: 90px;
+     /*position: relative; */
+     /*left: 119px; */
+     /*top: 85px; */
+    background-color: transparent;
+    border: none;
+
 }
 .check_title_box {
     text-align:center;
@@ -77,6 +103,7 @@ table.food_check_table {
 	font-weight: 200;
     color: #616564;
     font-size: 1.4em;
+    margin-top: 3px;
 }
 
 .edit_title {

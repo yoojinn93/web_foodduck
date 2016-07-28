@@ -1,0 +1,277 @@
+/*내브바 중앙으로*/
+.nav_prof {
+    margin-left: 16px;
+}
+
+
+
+table.profile_body_table {
+    width: 100%;
+    height: 100%;
+    cursor:pointer;
+    font-weight: 100;
+    font-size: 14px;
+    font-weight: 200;
+    font-family: 'Noto Sans Korean', 'Open Sans', 'sans-serif';
+    margin-top:12px;
+}
+
+.profile_body_label_btn {
+    background-color: #FDD020;
+    border: none;
+    color: white;
+    padding: 4px 17px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 100;
+    position: relative;
+    left: 143px;
+    bottom: 2px;
+}
+.profile_body {
+    background: none;
+    border-collapse: collapse;
+    width: 80%;
+    height: 220px;
+    margin: 0 auto;
+	/*text-align: center;
+	margin-top: 25px;*/
+	font-family: 'Noto Sans Korean', 'Open Sans', sans-serif;
+    color: #616564;
+    font-size: 20px;
+}
+
+table.profile_body_table {
+    width: 100%;
+    height: 100%;
+    cursor:pointer;
+
+}
+
+.profile_body_line {
+    /*line-height: 4px;*/
+	/*border-bottom:2px solid #ffd110;*/
+}
+
+
+
+/*1칸*/
+.my-face{
+    width: 55%;
+    margin-bottom:21px;
+}
+
+.my-border-effect {
+    border: 2px solid #ffffff;
+    /*padding: 9px;*/
+    /*border-left: 2px solid #fff;*/
+    /*border-bottom: 2px solid #fff;*/
+}
+
+.my-circle {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.my-camera{
+    width: 12%;
+    z-index: 9999;
+    position: relative;
+    margin-top: 79px;
+    margin-left: -43px;
+}
+
+.my-nickname{
+	color: #fff;
+	font-family: 'Noto Sans Korean', 'Open Sans', 'sans-serif';
+	font-weight:200;
+    font-size: 18px;
+    margin-top: -8px;
+}
+
+
+/*2칸 폼*/
+.form-inline {
+    margin-top: 11px;
+}
+
+.pf_form-group {
+    margin-bottom: -23px;
+}
+
+.form-inline label{
+    color: white;
+    font-weight: 500;
+    margin-left: -11px;
+    font-size: 17px;
+}
+
+.form-inline input[type=text]{
+    color: #616564;
+    border-radius: 8px;
+    border: transparent;
+        width: 80%;
+    height: 26px;
+    position: relative;
+    top: -30px;
+    left: 67px;
+    font-size: 17px;
+}
+
+
+/*3칸 주의식품 라벨*/
+.bad_label {    
+    background-color: #ffffff;
+    border: none;
+    color: #fdd020;
+    padding: 3px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 200;
+    position: relative;
+    /* left: 100px; */
+    bottom: 2px;
+    top: -8px;
+    margin-top: 35px;
+}
+
+
+
+/*4칸 주의식품 체크*/
+/*테이블*/
+.bad_check_table{
+    width: 100%;
+    line-height: 0px;
+    font-size: 17px;
+    margin-top: 34px;
+    cursor: pointer;
+}
+.bad_check_table tr{
+    height: 20px;    
+}
+
+/*체크박스*/
+.where {
+  display: block;
+  margin: 25px 15px;
+  font-size: 11px;
+  color: #000;
+  text-decoration: none;
+  font-family: verdana;
+  font-style: italic;
+}
+
+.checks {
+    position: relative;
+    margin-top: 13px;
+}
+
+.checks input[type="checkbox"] {  /* 실제 체크박스는 화면에서 숨김 */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip:rect(0,0,0,0);
+  border: 0
+}
+.checks input[type="checkbox"] + label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.checks input[type="checkbox"] + label:before {  /* 가짜 체크박스 */
+  content: ' ';
+  display: inline-block;
+  width: 21px;  /* 체크박스의 너비를 지정 */
+  height: 21px;  /* 체크박스의 높이를 지정 */
+  line-height: 21px; /* 세로정렬을 위해 높이값과 일치 */
+  margin: -2px 8px 0 0;
+  text-align: center; 
+  vertical-align: middle;
+  background: #fafafa;
+  border: 1px solid #cacece;
+  border-radius : 3px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+}
+
+.checks input[type="checkbox"] + label:active:before,
+.checks input[type="checkbox"]:checked + label:active:before {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.checks input[type="checkbox"]:checked + label:before {  /* 체크박스를 체크했을때 */ 
+  content: '\2714';  /* 체크표시 유니코드 사용 */
+  color: #fff;
+  text-shadow: 1px 1px #fff;
+  background: #e9ecee;
+  border-color: #adb8c0;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+}
+
+.checks.etrans input[type="checkbox"] + label {
+    padding-left: 29px;
+    padding-top: 11px;
+}
+.checks.etrans input[type="checkbox"] + label:before {
+  position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 0;
+    /* opacity: .6; */
+    box-shadow: none;
+    border: 2px solid white;
+    background: transparent;
+    /* -webkit-transition: all .12s, border-color .08s; */
+    transition: all .12s, border-color .08s;
+}
+
+.checks.etrans input[type="checkbox"]:checked + label:before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  top: -5px;
+  left: 5px;
+  border-radius: 0;
+  opacity:1; 
+  background: transparent;
+  border-color:transparent #fff #fff transparent;
+  border-top-color:transparent;
+  border-left-color:transparent;
+  -ms-transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
+  transform:rotate(45deg);
+}
+
+.no-csstransforms .checks.etrans input[type="checkbox"]:checked + label:before {
+  /*content:"\2713";*/
+  content: "\2714";
+  top: 0;
+  left: 0;
+  width: 21px;
+  line-height: 21px;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #fff;
+}
+
+label.bad_check {
+    color: white !important;
+    font-weight: 200;
+    font-family: 'Noto Sans Korean', 'Open Sans', 'sans-serif';
+}

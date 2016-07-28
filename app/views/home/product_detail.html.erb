@@ -7,9 +7,9 @@
 			<div class="wrap-content">
 				<div class="nav-menu text-center">
 					<img class="nav-profile img-circle border-effect" src="/assets/ilguk.png" alt=" ">
-						<img class="nav-camera" src="/assets/camera.gif" alt=" ">
+						<img class="side-go nav-camera" onclick="DoNav('/home/myprofile')" src="/assets/camera.gif" alt=" ">
 						<p class="nav-nickname">삼둥파파</p>
-						<button class="nav-proedit-btn">프로필 편집</button>
+						<button class="nav-proedit-btn" onclick="DoNav('/home/myprofile')">프로필 편집</button>
 					<div>
 						<img class="side-nemo" src="/assets/checklist.gif" alt=" ">
 							<p class="side-nemo-label">체크리스트</p>
@@ -52,40 +52,7 @@
 				</div>
 				<div class="nav-right">
 				    <a href="/home/index"><img src="/assets/go-home.gif" class="nav-img"/></a>
-					<div id="dd1" class="wrapper-dropdown-1" tabindex="1"><i class="fa fa-user"></i>
-						<ul class="dropdown">
-							<li><a href="#">Edit nav </a></li>
-							<li><a href="#">Help</a></li>
-							<li><a href="#">Activity log</a></li>
-							<li><a href="/users/sign_out">Log Out</a></li>
-						</ul>
-							<script type="text/javascript">
-														function DropDown(el) {
-															this.dd = el;
-															this.initEvents();
-														}
-														DropDown.prototype = {
-															initEvents : function() {
-																var obj = this;
-											
-																obj.dd.on('click', function(event){
-																	$(this).toggleClass('active');
-																	event.stopPropagation();
-																});	
-															}
-														}
-														$(function() {
-											
-															var dd = new DropDown( $('#dd1') );
-											
-															$(document).click(function() {
-																// all dropdowns
-																$('.wrapper-dropdown-1').removeClass('active');
-															});
-											
-														});
-							</script>
-					</div>
+					
 				</div>
 				<div class="clearfix"></div>
 			</div> 
@@ -95,32 +62,127 @@
 				<div class="main-shade">
 						<div class="food_search">
 								<form>
-									<input type="search" value="검색어를 입력해주세요!" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '검색어를 입력해주세요!';}" required="">
-									<input type="submit" value=" ">
-									<div class="search_click"></div>
+									<input type="search" placeholder="검색어를 입력해주세요!" >
+									  <a href="/home/product_detail"><input type="submit" value=" "></a>
+  									<div class="search_click" onclick="DoNav('/home/product_detail')"></div>
 								</form>
 						</div>
 						<div class="search_rec">
 								<p>
-									<a href="http://m.naver.com" class="search_rec_k"> #아기과자 </a>
-									<a href="http://m.naver.com" class="search_rec_k">#과자</a>
-									<a href="http://m.naver.com" class="search_rec_k">#GMO</a>
-									<a href="http://m.naver.com" class="search_rec_k">#감자칩</a>
+									<a class="search_rec_k"> #아기과자 </a>
+									<a class="search_rec_k">#과자</a>
+									<a class="search_rec_k">#GMO</a>
+									<a class="search_rec_k">#감자칩</a>
 								</p>
 						</div>
 				   
-        			    <div class="food_article2">
-        			        <table border="0" width="400" class="food_article_table_c">
-                            <tr>
-                            <td rowspan='3'align='center'><div style = 'top: 50%; right:20%'><img src='/assets/KakaoTalk_Photo_2016-07-27-18-54-12.png' height="125" width="125"></div></td>
-                            <td class='indent'rowspan='3'>제품명: 오징어땅콩</br>블라블라브라</td>
-                            </tr>
-                            
-                      
-                      </table>
-        		        </div>
-        		        
-        		        <div class="foot">
+        			    <div class="menu_img">
+												<div class="menu_each_product">
+														
+														<div class="each_product">
+															<div class="product_left">
+																<img class="product_pic" src="/assets/오징어땅콩.png" width="110px" height="110px">
+															</div>
+															<div class="product_right">
+															    <div class="right_div">
+    																<p>
+    																    <span class="bbold">제품명 :</span> 오징어땅콩 </br>
+    																    <span class="bbold">제조사 :</span> 오리온 제과 </br>
+    																    <span class="bbold">나의 평점 :</span> 
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
+    																    </br>
+    																 	<center>
+    																 		<a href="/home/result"><button class="food_detail_btn">자세히 보기</button></a>
+    																 	</center>
+    																</p>
+    															</div>
+															</div>
+															<div class="clearfix"> </div>
+														</div>
+														
+														<div class="each_product">
+															<div class="product_left">
+																<img class="product_pic" src="/assets/쿠크다스.png" width="110px" height="110px">
+															</div>
+															<div class="product_right">
+															    <div class="right_div">
+    																<p>
+    																    <span class="bbold">제품명 :</span> 쿠크다스 화이트 </br>
+    																    <span class="bbold">제조사 :</span> 크라운 제과 </br>
+    																    <span class="bbold">나의 평점 :</span> 
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
+    																    </br>
+    																 	<center>
+    																 		<a href="/home/main"><button class="food_detail_btn">자세히 보기</button></a>
+    																 	</center>
+    																</p>
+    															</div>
+															</div>
+															<div class="clearfix"> </div>
+														</div>
+														
+														<div class="each_product">
+															<div class="product_left">
+																<img class="product_pic" src="/assets/포카칩.png" width="110px" height="110px">
+															</div>
+															<div class="product_right">
+															    <div class="right_div">
+    																<p>
+    																    <span class="bbold">제품명 :</span> 포카칩 오리지널 </br>
+    																    <span class="bbold">제조사 :</span> 오리온 제과 </br>
+    																    <span class="bbold">나의 평점 :</span> 
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
+    																    </br>
+    																 	<center>
+    																 		<a href="/home/main"><button class="food_detail_btn">자세히 보기</button></a>
+    																 	</center>
+    																</p>
+																</div>
+															</div>
+															<div class="clearfix"> </div>
+														</div>
+														
+														<div class="each_product">
+															<div class="product_left">
+																<img class="product_pic" src="/assets/도도한나쵸.png" width="110px" height="110px">
+															</div>
+															<div class="product_right">
+																<div class="right_div">
+																<p>
+    																    <span class="bbold">제품명 :</span> 도도한 나쵸 오리지널 </br>
+    																    <span class="bbold">제조사 :</span> 오리온 제과 </br>
+    																    <span class="bbold">나의 평점 :</span> 
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_colored" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
+    																    <img src="/assets/star_non" width="15" height="15" class="star_review">
+    																    </br>
+    																 	<center>
+    																 		<a href="/home/main"><button class="food_detail_btn">자세히 보기</button></a>
+    																 	</center>
+    																</p>
+																</div>
+															</div>
+															<div class="clearfix"> </div>
+														</div>
+												</div>
+											</div>
+										</div>
+                        
+        		        <div class="foot22">
         		        	
         		        </div>
 				</div>	    

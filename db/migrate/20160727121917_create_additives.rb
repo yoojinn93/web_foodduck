@@ -4,7 +4,7 @@ class CreateAdditives < ActiveRecord::Migration
       t.string :name
       t.string :english
       t.text :information
-
+      t.integer :checklist_id
       t.timestamps null: false
     end
   end

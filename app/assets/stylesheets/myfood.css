@@ -21,7 +21,7 @@ ul.small_menu_list {
 }
 
 .nav-myfood-name h5 {
-	font-family: 'Montserrat';
+	font-family: 'Noto Sans Korean','Montserrat';
 	position: relative;	
 	left: -2px;
     top: 2px;
@@ -29,6 +29,28 @@ ul.small_menu_list {
     color: #fff;
 }
 
+/*자세히보기 버튼*/
+.food_detail_btn {
+    background-color: #FDD020;
+    border: none;
+    color: white;
+    padding: 4px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 200;
+    position: relative;
+    bottom: 2px;
+}
+
+/*식품별 정보*/
+.right_div p{
+	font-family: 'Noto Sans Korean','Open Sans', sans-serif;    
+    
+}
 
 h4, h5, h6,
 h1, h2, h3 {margin: 0;}
@@ -36,21 +58,27 @@ ul, ol, li{margin: 0; padding: 0;}
 p {margin: 0;padding: 0;}
 body{	
 	background: #ffd110;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Noto Sans Korean','Open Sans', sans-serif;
 	margin:0;
 	background-size:cover;
 	padding:0;
 }
+
+/*bold weight 지정 */
+.bbold {
+    font-weight: 600;
+}
+
 body p{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Noto Sans Korean','Open Sans', sans-serif;
   
 }
 /*--fonts--*/
 h1,h2,h3,h4,h5,h6{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Sans Korean','Montserrat', sans-serif;
 }
 @font-face{
-	font-family: 'Source Sans Pro';
+	font-family: 'Noto Sans Korean','Source Sans Pro';
 	src:url(../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf) format('truetype');
 }
 .side-nav.leftside-navigation {
@@ -95,7 +123,7 @@ h1,h2,h3,h4,h5,h6{
 /*--status-bar--*/
 .body-back{
     background: #f7f7f7;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Noto Sans Korean','Open Sans', sans-serif;
     margin: 0;
 
 	}
@@ -140,7 +168,7 @@ li.circle:nth-child(4),li.circle:nth-child(5) {
 }
 .time p {
     color: #fff;
-    font-family: sans-serif;
+    font-family: 'Noto Sans Korean',sans-serif;
     font-weight: 300;
     font-size: 15px;
 }
@@ -155,7 +183,7 @@ li.circle:nth-child(4),li.circle:nth-child(5) {
 }
 .blutot-battery li {
     color: #fff;
-    font-family: sans-serif;
+    font-family: 'Noto Sans Korean',sans-serif;
     font-weight: 300;
     font-size: 15px;
 }
@@ -565,7 +593,7 @@ h5.title_myfood {
     margin: 0 auto;
 	background:#fff;
     font-weight: 200;
-    font-family: 'Noto Sans Korean', 'Open Sans', sans-serif;
+    font-family: 'Noto Sans Korean','Noto Sans Korean', 'Open Sans', sans-serif;
     
 }
 .small_menu_item{
@@ -661,7 +689,8 @@ p.tit-two:before{
 .star_review
 {
     padding: 0px;
-    margin: 0px;
+    margin: -1.3px;
+    margin-bottom: 4px;
 }
 
 .each_product
@@ -674,10 +703,12 @@ p.tit-two:before{
 .product_left
 {
 	display: inline-block;
-    margin: 10px;
     border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
+	    margin-top: 14px;
+	    margin-bottom: 12px;
+	       margin-left: 4px;
 }
 
 .product_pic
@@ -693,6 +724,7 @@ p.tit-two:before{
     border: 1px solid rgba(0, 0, 255, 0);
 	display: inline-block;
 	margin: 10px 0px 0px 0px;
+	    margin-top: 17px;
 }
 
 .product_right p 
@@ -700,10 +732,12 @@ p.tit-two:before{
 /*{*/
 /*    border: 1px solid cyan;*/
     text-align: left;
-    font-size: 14px;
-    color: #464646;
-    line-height: 2em;
+    font-size: 1.05em;
+    line-height: 1.45em;
+    font-weight: 200;
+    color: #616564;
 	margin: 0px 0px 10px 10px;
+	font-family: 'Noto Sans Korean', 'Open Sans', sans-serif;	
 }
 
 .more_about
@@ -1099,11 +1133,8 @@ input[type="file"] {
 	}
 	.product_right {
 		float: right;
-		width: 63%;
-	}
-	.product_right p {
-		font-size: 13px;
-		line-height: 2.0em;
+		width: 61%;
+		    margin-top: 17px;
 	}
 	.c100 {
 		font-size: 120px !important;
@@ -1322,7 +1353,7 @@ input[type="file"] {
 		font-size: 16px;
 		width: 32.5%;
 		font-weight: 200;
-		font-family: 'Noto Sans Korean', 'Open Sans', sans-serif;
+		font-family: 'Noto Sans Korean','Noto Sans Korean', 'Open Sans', sans-serif;
 	}
 	.menu_each_product {
 		padding: 0px 0px;
@@ -1481,14 +1512,15 @@ input[type="file"] {
 		float: none;
 		    width: 29%;
 		margin: 0 auto;
+		    margin-top: 14px;
+		    margin-bottom: 12px;
+		        margin-left: 4px;
 	}
 	.product_right {
 		float: none;
 		width: 100%;
-		margin-top: 20px;
-	}
-	.product_right p{
-		text-align:center;
+		margin-top: 17px;
+		
 	}
 	.parker-img img {
 		width: 34%;
