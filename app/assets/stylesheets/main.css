@@ -1121,6 +1121,31 @@ td.indent {
 }
 
 
+/* 성분백과 결과*/
+.div_search
+{
+    margin: 35px 0px 20px 40px;
+}
+
+.gu_search
+{
+    /* 폰트 색상 */
+}
+
+.guyeonsan
+{
+    color: #FDD020;
+}
+
+.div_other
+{
+    clear: both;
+    padding: 35px 0px 20px 0px;
+    margin-left: 40px;
+}
+/* 성분백과 결과 끝 */
+
+
 /* 성분백과 상세 (KSK) */
 .nav_dic
 {

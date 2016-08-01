@@ -1,0 +1,129 @@
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
+  <!-- isotope CDN -->
+  <script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
+</head>
+
+<body>
+	<div class="body-back">
+		<div class="masthead pdng-stn1">
+			<!--사이드바-->
+			<div id="menu" class="sidenav" role="navigation">
+				<div class="wrap-content">
+				<div class="nav-menu text-center">
+					<img class="nav-profile img-circle border-effect" src="/assets/ilguk.png" alt=" ">
+					<img class="side-go nav-camera" onclick="DoNav('/home/myprofile')" src="/assets/camera.gif" alt=" ">
+						<p class="nav-nickname">삼둥파파</p>
+						<button class="nav-proedit-btn" onclick="DoNav('/home/myprofile')">프로필 편집</button>
+					
+					<div class="side-go" onclick="DoNav('/home/myfood')">
+						<img class="side-nemo" src="/assets/my_food.png" alt=" ">
+							<p class="side-nemo-label">마이푸드</p>
+					</div>	
+					<div class="side-go" onclick="DoNav('/home/checklist')">
+						<img class="side-nemo" src="/assets/checklist.gif" alt=" ">
+							<p class="side-nemo-label">체크리스트</p>
+					</div>
+					<div class="side-go" onclick="DoNav('/home/qna')">
+						<img class="side-nemo" src="/assets/qna.png" alt=" ">
+							<p class="side-nemo-label">Q&A</p>
+					</div>
+					<div class="side-go" onclick="DoNav('/home/setting')">
+						<img class="side-nemo" src="/assets/setting.png" alt=" ">
+							<p class="side-nemo-label">설정</p>
+					</div>
+
+				</div>
+				</div>
+			</div>
+		</div>
+			
+			
+			<div class="phone-box wrap push">
+			    
+			    <!-- nav -->
+				<div class="navtop">
+					<div class="nav-left">
+						<a href="#menu" class="menu-link"><img src="/assets/left-top.gif" class="nav-img"/></a>
+					</div>
+					<div class="nav-name">
+						<div class="nav_dic">
+							<h5 class="pro-link"> DICTIONARY </h5>
+						</div>
+					</div>
+					<div class="nav-right">
+					    <a href="/home/index"><img src="/assets/go-home.gif" class="nav-img"/></a>
+					
+					</div>
+					<div class="clearfix"></div>
+				</div> 
+				
+				<!--리얼 바디-->
+				<div class="main-grid">
+					<div class="main-shade">
+							<div class="food_search">
+									<form>
+									<input type="search" placeholder="검색어를 입력해주세요!" >
+									  <a href="/home/dic_search"><input type="submit" value=" "></a>
+  									<div class="search_click" onclick="DoNav('/home/dic_search')"></div>
+								</form>
+							</div>
+							<div class="search_rec">
+									<p>
+										<a href="/home/dic_id" class="search_rec_k">구연산 </a>
+										<a href="/home/dic_id" class="search_rec_k">사이토키닌</a>
+										<a href="/home/dic_id" class="search_rec_k">팜유</a>
+										<a href="/home/dic_id" class="search_rec_k">아질산나트륨</a>
+									</p>
+							</div>
+											
+							<!-- 결과 -->
+							<div class="div_search">
+    							<p class="gu_search"><span class="guyeonsan">구연산</span> 검색결과</p>
+    							<div class="element-item transition ㄱ " data-category="transition" onclick="DoNav('/home/dic_id')" style="cursor:pointer;">
+    							   <h5 class="name elename elename">구연산</h5>
+    						       <p class="symbol">1</p>
+    							</div>
+							</div>
+							<!-- 결과 끝-->
+							
+							<!-- 연관 -->
+							<div class="div_other">
+							    <p class="gu_search"><span class="guyeonsan">구연산</span> 연관검색어</p>
+							    <div class="element-item transition ㄱ " data-category="metalloid" onclick="DoNav('/home/dic_id')" style="cursor:pointer;">
+							        <h5 class="name elename">과소산</h5>
+							        <p class="symbol">2</p>
+							    </div>
+							    <div class="element-item transition ㅋ" data-category="alkali" onclick="DoNav('/home/dic_id')" style="cursor:pointer;">
+							        <h5 class="name elename">칼리산</h5>
+							        <p class="symbol">2</p>
+							    </div>
+							</div>
+							<!-- 결과 끝 -->
+									
+											
+					    
+	        		        <div class="dicfoot" style="clear: both;">
+	        		        	
+	        		        </div>
+					</div>	    
+				    
+				</div>
+
+	</div>
+	</div>
+	<script src="/assets/jquery.nicescroll.js"></script>
+	<script src="/assets/scripts.js"></script>
+	
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+	<script src="/assets/isotope-docs.min.js"></script>
+	<script src="/assets/isotope.pkgd.js"></script>
+
+
+</body>

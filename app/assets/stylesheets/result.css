@@ -439,6 +439,7 @@ li.circle:nth-child(4),li.circle:nth-child(5) {
     background: #fff;
     padding: 2em 1em;
     text-align: center;
+    margin-bottom: -30px;
 }
 .detail h3 {
     color: #616564!important;
@@ -453,12 +454,13 @@ li.circle:nth-child(4),li.circle:nth-child(5) {
 	 line-height:1.8em;
 	 margin-bottom:10px;
 }
+
 /*--read-more--*/
 .more a {
     font-size: 1em;
     color: #fff;
     background:#FFD110;
-       padding: 0.8em 1.8em;
+    padding: 0.8em 1.8em;
     display: inline-block;
     margin-top: 1em;
     position: relative;
@@ -1416,8 +1418,8 @@ h3.tittle.reserve {
         color: #777;
     outline: none;
     font-size:0.9em;
-    padding:0.8em 0.8em;
-   border: 2px solid #FFD110;
+   /* padding:0.8em 0.8em;*/
+   /*border: 2px solid #FFD110;*/
     -webkit-appearance: none;
     margin-bottom: 1.5em;
 	line-height: 1.8em;
@@ -1442,7 +1444,7 @@ h3.tittle.reserve {
     padding: 1em 2em;
     font-size: 1em;
     cursor: pointer;
-    border: 2px solid#FFD110;
+    /*border: 2px solid#FFD110;*/
     outline: none;
     background: #FFD110;
 }
@@ -1561,7 +1563,7 @@ textarea:focus ~ span {
 textarea {
       width: 100%;
       min-height: 7em;
-      /*border-bottom: 1px solid #ddd;*/
+      border-bottom: 1px solid #ddd;
       resize: none;
 }
 form {

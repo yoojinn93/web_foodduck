@@ -15,10 +15,11 @@ Rails.application.routes.draw do
   
   #get 'myfood' => 'home#myfood'
   #get 'qna' => 'home#qna'
-  #get 'customer' => 'home#customer'
+  get 'customer' => 'home#customer'
   #get 'setting' => 'home#setting'
   get 'dic_main' => 'home#dic_main'
-  get 'dic_id' => 'home#dic_id'
+  get 'dic_search' => 'home#dic_search'
+  #get 'dic_id' => 'home#dic_id'
   get 'screen' => 'home#screen'
 
   # The priority is based upon order of creation: first created -> highest priority.
