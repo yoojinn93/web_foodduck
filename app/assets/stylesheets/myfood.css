@@ -695,7 +695,7 @@ p.tit-two:before{
 
 .each_product
 {
-        border-bottom: 2px solid #ffd110;
+    border-bottom: 2px solid #ffd110;
 	text-align: left;
 	padding: 0 17px;
 }

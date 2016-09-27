@@ -13,12 +13,12 @@ Rails.application.routes.draw do
   post ':controller(/:action(/:id))'
   root 'home#phone'
   
-  #get 'myfood' => 'home#myfood'
+  get 'myfood' => 'home#myfood'
   #get 'qna' => 'home#qna'
   get 'customer' => 'home#customer'
   #get 'setting' => 'home#setting'
   get 'dic_main' => 'home#dic_main'
-  get 'dic_search' => 'home#dic_search'
+  #get 'dic_search' => 'home#dic_search'
   #get 'dic_id' => 'home#dic_id'
   get 'screen' => 'home#screen'
 
